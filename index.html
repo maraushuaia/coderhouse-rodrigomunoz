@@ -9,7 +9,7 @@
         <link rel="shortcut icon" href="./favicon.png">
         <link href="./css/bootstrap.css" rel="stylesheet">
         <link rel="stylesheet" href="./css/styles.css">
-
+        
     </head>
 
     <body>
@@ -25,122 +25,143 @@
                                     <h6 class="d-none d-md-inline-block">Telefono</h6>
                                 </div>
                             </div>
-
                             <div class="col-6">
                                 <!-- <div class="d-none d-md-inline-block ro-float-right ">
                                     <input class="form-control me-5" type="search" placeholder="Buscar información" aria-label="Search">
                                 </div> -->
                                 <div class="d-none d-md-inline-block ro-float-right">
                                     <a href="#" class="btn ro-btn-light"></span>Registrarse</a>
-                                    <a href="#" class="btn btn-primary"></span>Ingresar</a>
+                                    <a href="/pages/acceso_portal.html" class="btn btn-primary"></span>Ingresar</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
+                <!--Menu Principal-->
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="#">
                             <img src="./logo90.png" alt="Logo del Juzgado" width="42" height="42" class="d-inline-block align-text-center">
                             JUZGADO DE FALTAS
                         </a>
-
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                         
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link active font-menu" aria-current="page" href="#">Inicio</a>
-                                </li>
-                                
-                                <li class="nav-item">
-                                    <a class="nav-link font-menu" href="#">Institucional</a>
-                                </li>
-
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle font-menu" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <li class="nav-item"><a class="nav-link active font-menu" aria-current="page" href="#">Inicio</a></li>
+                                <li class="nav-item"><a class="nav-link font-menu" href="#">Institucional</a></li>
+                                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle font-menu" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Trámites Frecuentes
                                     </a>
                                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                             <li><a class="dropdown-item font-menu" href="#">Libre Deuda</a></li>
-                                            <li><a class="dropdown-item font-menu href="#">Pagos</a></li>
+                                            <li><a class="dropdown-item font-menu" href="#">Pagos</a></li>
                                             <li><a class="dropdown-item font-menu" href="#">Descargos</a></li>
                                         </ul>
                                 </li>
-                            
-                                <li class="nav-item">
-                                    <a class="nav-link font-menu" href="#">Edictos</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link font-menu" href="#">Contacto</a>
-                                </li>
+                                <li class="nav-item"><a class="nav-link font-menu" href="#">Edictos</a></li>
+                                <li class="nav-item"><a class="nav-link font-menu" href="#">Contacto</a></li>
                             </ul>
-
                         </div>
                     </div>
-                    </nav>
-
-               
+                </nav>
             </header>
         <!-- Fin Navegadores-->
 
 
         <!--Inicio Sección Principal-->
-            <main class="container-fluid">
+            <main>
                 <section>
-                    <div class="centered">
-                        <h2 class="center text22">BIENVENIDOS</h2>
-                    </div>
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <a href="/pages/tramites_frecuentes.html"><img src="/image/slider_home.webp" class="d-block w-100" alt="..."></a>
+                            <div class="ro-carousel-caption d-none d-md-block">
+                              <h5>Etiqueta de la primera diapositiva</h5>
+                              <p>Algún contenido placeholder representativo para la primera diapositiva.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <a href="/pages/edictos.html"><img src="/image/slider_home.webp" class="d-block w-100" alt="..."></a>
+                            <div class="ro-carousel-caption d-none d-md-block">
+                              <h5>Etiqueta de la segunda diapositiva</h5>
+                              <p>Algún contenido placeholder representativo para la segunda diapositiva.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <a href="/pages/acceso_portal.html"><img src="/image/slider_home.webp" class="d-block w-100" alt="..."></a>
+                            <div class="ro-carousel-caption d-none d-md-block">
+                              <h5>Etiqueta de la tercera diapositiva</h5>
+                              <p>Algún contenido placeholder representativo para la tercera diapositiva.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Siguiente</span>
+                        </button>
+                      </div>
                 </section>
                 
             <!-- NOTICIAS -->
                 
-                <section class="box__main__container">
-                    
-                    <div class="h2__encabezados inline__block">
-                        <h2 class="centered center text17">NOTICIAS DESTACADAS</h2>
-                    </div>
+                <section class="container">
                     
                     <div>
-                        <article class="box__col">
-                            <img src="https://picsum.photos/200?random=1" alt="">
-                            <h2>Modernizacion de Juzgados de Faltas</h2>
-                            
-                            <p class="justify">En el marco de la consolidación del nuevo esquema único de control y juzgamiento de infracciones de tránsito, la Agencia Provincial de Seguridad Vial ha implementado herramientas técnicas para la gestión, juzgamiento de las infracciones de tránsito.</p>
-                            <footer>
-                                    <form action="#">
-                                        <input class="btn btn__secondary--white" type="submit" value="Leer más">
-                                    </form>
-                            </footer>
-                        </article>
-                        
-                        <article class="box__col">
-                            <img src="https://picsum.photos/200?random=2" alt="">
-                            <h2>Juzgados de Faltas: vías de comunicación e impresión de boletas de pago</h2>
-                            
-                            <p class="justify">Conocé cómo realizar consultas a los diferentes juzgados de Faltas para recibir orientación en relación a los diferentes diligencias administrativas.</p>
-                            <footer>
-                                    <form action="#">
-                                        <input class="btn btn__secondary--white" type="submit" value="Leer más">
-                                    </form>
-                            </footer>
-                        </article>
-                        
-                        <article class="box__col">
-                            <img src="https://picsum.photos/200?random=3" alt="">
-                            <h2>La tecnología al servicio de la Justicia</h2>
-                            <p class="justify">Un jubilado fue absuelto de dos multas de tránsito por estacionar frente a su hogar. En el caso, la Justicia porteña utilizó la herramienta StreetView de Google, para chequear que no exista un cartel que prohibía estacionar en el lugar.</p>
-                            <footer>
-                                <form action="#">
-                                    <input class="btn btn__secondary--white" type="submit" value="Leer más">
-                                </form>
-                            </footer>
-                        </article>
+                        <h2>NOTICIAS DESTACADAS</h2>
                     </div>
+
+                    <div class="card-group">
+                        <div class="card card-margin border-info">
+                            <img src="/image/atencion.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Modernizacion de Juzgados de Faltas</h5>
+                                <p class="card-text">En el marco de la consolidación del nuevo esquema único de control
+                                     y juzgamiento de infracciones de tránsito, la Agencia Provincial de Seguridad Vial
+                                     ha implementado herramientas técnicas para la gestión, juzgamiento de las infracciones
+                                     de tránsito.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-primary">Leer más</a>
+                            </div>
+                        </div>
+
+                        <div class="card card-margin border-info">
+                            <img src="/image/atencion.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Juzgados de Faltas: vías de comunicación e impresión de boletas de pago</h5>
+                                <p class="card-text">Conocé cómo realizar consultas a los diferentes juzgados de Faltas para recibir orientación en relación a los diferentes diligencias administrativas.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-primary">Leer más</a>
+                            </div>
+                        </div>
+                        
+                        <div class="card card-margin border-info">
+                            <img src="/image/atencion.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">La tecnología al servicio de la Justicia</h5>
+                                <p class="card-text">Un jubilado fue absuelto de dos multas de tránsito por estacionar
+                                frente a su hogar. En el caso, la Justicia porteña utilizó la herramienta StreetView
+                                de Google, para chequear que no exista un cartel que prohibía estacionar en el lugar.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-primary">Leer más</a>
+                            </div>
+                        </div>
+
+                    </div>
+
                 </section>
 
             <!-- BANNER VALOR UFA -->
@@ -276,12 +297,14 @@
             
             <!-- Copyright -->
             <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">© 2022 Copyright:
-                <a class="text-white" href="#">Rodrigo Muñoz</a>
+                <a class="text-white" href="https://github.com/maraushuaia" target="_blank">Rodrigo Muñoz</a>
             </div>
 
         </footer>
 
         <script src="./js/bootstrap.bundle.min.js"></script>
+        
+ 
 
     </body>
 </html>

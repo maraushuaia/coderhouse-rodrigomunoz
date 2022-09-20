@@ -15,8 +15,7 @@
 
 .ro-footer{
     background-color: #0000000a;
-    color: #0000009f;
-    
+    color: #0000009f;    
 }
 
 /*---*/
@@ -28,6 +27,7 @@
     border-color: #0d6efd;
     color:#0d6efd;
 }
+
 .ro-float-right {
     float:right;
 }
@@ -69,3 +69,30 @@
     cursor: default;
 }
 
+.ro-carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 1.25rem;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #ff0000;
+    text-align: center;
+  }
+
+  .card-margin{
+    padding: 1.5rem;
+  }
+
+
+  .ro-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+  }
