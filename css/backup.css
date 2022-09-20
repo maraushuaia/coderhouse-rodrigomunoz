@@ -1,0 +1,327 @@
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,300&display=swap');
+
+/*Seteo opciones por defecto para el sitio*/
+*{
+    margin:0px;
+    padding:0px;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    font-size: 14px;
+};
+
+/*Aquí establezco el GRID para la páginas*/
+.box_body{
+    display: grid;
+    grid-template-areas: 
+        "search"
+        "nav"
+        "slider"
+        "news"
+        "ufa"
+        "statistics"
+        "footer";
+        height: 100%;
+        width: 100vw;
+}
+
+
+/*Defino caja del HEADER*/
+/* .box__header{
+    width: 100%;
+    height: 25%;
+   
+} */
+
+.box_header{
+    position: sticky;
+    top: 0px;
+}
+
+
+.box_chat{
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+}
+
+
+/*Defino la caja del menu BUSQUEDA Y ACCESO*/
+.box_nav_access{
+    width: 100%;
+    height: 25%;
+    background-color: #1d5f9c23;
+    color: black;
+    padding-right: 12px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 12px;
+    font-size: 1.5rem;
+    grid-area: search;
+    display: inline-block;
+    align-items: center;
+}
+
+/*Defino la caja del menu PRINCIPAL*/
+.container_nav{
+    width: 100vw;
+    height: 15vh;
+    background-color: #0000000a;
+    font-size: 2rem;
+    grid-area: nav;
+    display: inline-block;
+}
+    
+.box_nav_menu{
+    margin: 0 auto;
+    padding-left: 12px;
+    padding-right: 12px;
+    position: relative;
+    display: inline-block;
+}
+
+
+
+
+
+        
+  
+
+
+
+
+/**/
+/*EN ESTA SECCIÓN CREO CAJAS DE MEDIDAS ABSOLUTAS*/
+/**/
+
+/*Defino caja del BODY*/
+/* .box__body{
+    width: 100vw;
+    height: 100vh;
+} */
+
+/*Defino caja del MAIN*/
+.box__main{
+    width: 100%;
+}
+
+.box__main__container{
+    width: 100%;
+    color: #0000009f;
+    text-align: center;
+    font-size: 1rem;
+    /* display: block; */
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+
+
+/*Defino la caja del FOOTER*/
+.box__footer{
+    width: 100vw;
+    height: 25%;
+    background-color: #0000000a;
+    color: #0000009f;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 3rem;
+    grid-area: nav;
+}
+
+
+/**/
+/*EN ESTA SECCIÓN CREO CLASES REUTILIZABLES*/
+/**/
+
+.left{text-align: left;}
+.right{text-align: right;}
+.center{text-align: center;}
+.justify{text-align: justify;}
+
+.lista__off{list-style-type: none;}
+.link__off{text-decoration: none;}
+
+.inline{display: inline;}
+.inline__flex{display: inline-flex;}
+.inline__block{display: inline-block;}
+
+.strong{font-weight: bolder;}
+
+.text10{font-size: 1rem;}
+.text11{font-size: 1.1rem;}
+.text12{font-size: 1.2rem;}
+.text13{font-size: 1.3rem;}
+.text14{font-size: 1.4rem;}
+.text15{font-size: 1.5rem;}
+.text16{font-size: 1.6rem;}
+.text17{font-size: 1.7rem;}
+.text18{font-size: 1.8rem;}
+.text19{font-size: 1.9rem;}
+.text20{font-size: 2rem;}
+.text21{font-size: 2.1rem;}
+.text22{font-size: 2.2rem;}
+.text23{font-size: 2.3rem;}
+
+.image__size{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*Centrado vertical*/
+.centered{
+    position: relative;
+    top: 50%;
+    transform: translatey(-50%);
+}
+
+/*Defino el tamaño de los iconos de redes sociales*/
+.iconos__redes__md{
+    height: 40px;
+    width: 40px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.iconos__redes__sm{
+    height: 20px;
+    width: 20px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*Encabezado de presentación de las páginas*/
+.h2__encabezados{
+    height: 10vh;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+/**/
+/*EN ESTA SECCIÓN CREO CAJAS DE DIVERSAS MEDIDAS RELATIVAS*/
+/**/
+
+
+
+.box__container{
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/*Defino cajas con un 30% de ancho respecto a su caja contenedora*/
+/*Por ejemplo lo uso en la sección Inicio/noticias*/
+.box__footer__col{
+    width: 30%;
+    color: #141313;
+    display: inline-table;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.box__col{
+    width: 30%;
+    color: #141313;
+    display: inline-table;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0%;
+    margin-bottom: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border: 2px solid #0d6dfd65;
+}
+
+/*Configuro el contenedor donde se inserta la imagen cabecera de las páginas*/
+.box__encabezado{
+    width: 100%;
+    height: 30vh;
+    background-image: url(../image/sub_header3.webp);
+    background-position: center;
+    color: #000000;
+}
+
+/*Defino el contendor del CARRUSEL*/
+.carrusel{
+    width: 100%;
+    height: 80vh;
+    max-width: 100%;
+    max-height: 100%;
+    background-image: url(../image/slider_home.webp);
+    background-size: cover;
+}
+
+
+/*Configuro el BUSCADOR PRINCIPAL*/
+.box__header__nav__access__search{
+    height: 32px;
+    width: 250px;
+    color: #000000f8;
+    border-radius: 8px;
+    border-color: #fdfbfbf8;
+    margin-right: 6px;
+    padding-left: 10px;
+}
+
+/**/
+/*EN ESTA SECCIÓN CONFIGURO BOTONES Y SUS VARIANTES*/
+/**/
+/*Creo boton MENU*/
+.btn{
+    height: 35px;
+    width: 150px;
+    font-size: 1.3rem;
+    border-radius: 8px;
+    text-align: center;
+    display: inline;
+}
+
+.btn_menu{
+    border: 2px solid #0d6dfd65;
+    text-decoration: none;
+    color: #0d6efd;
+    padding: 10px;
+}
+
+
+.btn--med{
+    height: 35px;
+    width: 200px;
+    font-size: 1.3rem;
+    border-radius: 8px;
+    text-align: center;
+    display: inline;
+}
+
+.btn__primary{
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    color: #ffffff;
+}
+
+.btn__secondary{
+    background-color: #35e26f;
+    border-color: #35e26f;
+    color:#1b1717;
+}
+
+.btn__secondary--white{
+    background-color: #ffffffd7;
+    border-color: #0d6efd;
+    color:#0d6efd;
+}
+
+.btn__secondary--bk_white{
+    background-color: #6198cc23;
+    border-color: #0d6efd;
+    color:#0d6efd;
+}

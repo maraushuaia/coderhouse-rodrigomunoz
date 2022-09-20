@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,300&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.ro-margin-l-r-4{
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.font-menu{
+    font-size: 1.2rem;
+}
+
+.ro-footer{
+    background-color: #0000000a;
+    color: #0000009f;
+    
+}
+
+/*---*/
+/* Construyo modificaciones de algunos elementos de Bootstrap*/
+/*---*/
+
+.ro-btn-light{
+    background-color: #ffffffe1;
+    border-color: #0d6efd;
+    color:#0d6efd;
+}
+.ro-float-right {
+    float:right;
+}
+
+.ro-float-left {
+    float:left;
+} 
+
+.ro-top-bar {
+    padding: .5rem 0;
+    background: #eee;
+}
+
+.navbar-collapse{
+    flex-basis: 100%;
+    flex-grow: 0;
+}
+
+.footer-link {
+    display: block;
+    color: #0d6efd;
+    text-decoration: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  }
+
+@media (prefers-reduced-motion: reduce) {
+    .footer-link {
+      transition: none;
+    }
+}
+
+.footer-link:hover, .footer-link:focus {
+    color: #0a58ca;
+}
+
+.footer-link.disabled {
+    color: #6c757d;
+    pointer-events: none;
+    cursor: default;
+}
+
