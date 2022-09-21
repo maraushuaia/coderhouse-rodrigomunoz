@@ -4,127 +4,201 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Juzgado - Contacto</title>
+        <title>Juzgado - SILVINA</title>
+        <link href="/css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="../css/styles.css">
         <link rel="shortcut icon" href="../favicon.ico">
     </head>
 
     <body>
         <!-- Inicio Navegadores-->
-            <header>
-                    <!--Navedador de acceso-->
-                    <nav class="nav__access">
-                        <form class="display__inline" action="" method="post">
-                            <input placeholder="Buscar trámites ..." class="nav__access__input__search" type="text" value="">
-                        </form>
-                        
-                        <form class="display__inline" action="./crear_cuenta.html">
-                            <input class="btn btn__secondary--white" type="submit" value="Registrarse"></a>
-                        </form>
-
-                        <form class="display__inline" action="./acceso_portal.html">
-                            <input class="btn btn__primary" type="submit" value="Ingresar"></a>
-                        </form>
-                    </nav>
-                    
-                    <!--Navedador principal-->
-                    <nav class="nav__main">
-                        <div>
-                            <a class="nav__main__block__link" href="../index.html">Inicio</a>
-                            <a class="nav__main__block__link" href="./institucional.html">Institucional</a>
-                            <a class="nav__main__block__link" href="./tramites_frecuentes.html">Trámites Frecuentes</a>
-                            <a class="nav__main__block__link" href="./edictos.html">Edictos</a>
-                            <a class="nav__main__block__link" href="./noticias.html">Noticias</a>
-                            <a class="nav__main__block__link" href="./contacto.html">Contacto</a>
+        <header>
+            <!--Navedador de acceso-->
+            <div class="ro-top-bar">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="d-none d-md-inline-block ro-float-left">
+                                <i class="fa-brands fa-facebook"></i>
+                                <h6 class="d-none d-md-inline-block">Direccion</h6>
+                                <h6 class="d-none d-md-inline-block">Telefono</h6>
+                            </div>
                         </div>
-                    </nav>
-            </header>
-        <!-- Fin Navegadores-->
+                        <div class="col-6">
+                            <div class="d-none d-md-inline-block ro-float-right">
+                                <a href="#" class="btn ro-btn-light"></span>Registrarse</a>
+                                <a href="#" class="btn btn-primary"></span>Ingresar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Menu Principal-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="/logo90.png" alt="Logo del Juzgado" width="42" height="42" class="d-inline-block align-text-center">
+                        JUZGADO DE FALTAS
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link active font-menu" aria-current="page" href="/index.html">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link font-menu" href="./institucional.html">Institucional</a></li>
+                            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle font-menu" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Trámites Frecuentes
+                                </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item font-menu" href="#">Libre Deuda</a></li>
+                                        <li><a class="dropdown-item font-menu" href="#">Pagos</a></li>
+                                        <li><a class="dropdown-item font-menu" href="#">Descargos</a></li>
+                                    </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link font-menu" href="#">Edictos</a></li>
+                            <li class="nav-item"><a class="nav-link font-menu" href="#">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
 
 
         <!--Inicio Sección Principal-->
             <main>
                 
-                <section class="container__header__page">
-                    <div class=" elementor-149">
+                <section class="ro-header-pages">
+                    <div class="wrap-texto">
                         <h2 class="alineacion_center">CONTÁCTENOS</h2>
                     </div>
                 </section>
 
-                <section class="form__contacto">
+                 
+                <section class="container p-4">
                         
-                        <form class="form__contacto__col">
-                            <div>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad explicabo minima eligendi iusto quos, magnam possimus voluptas at doloremque, facilis deserunt reiciendis ipsam distinctio sed autem neque tempore? Reiciendis, fugit!</p> <br>
-                            </div>
-
-                            <div>
-                                <input class="input__text__big" type="text" placeholder="Nombres" required>
-                            </div>
-                            
-                            <div>
-                                <input class="input__text__big" type="text" placeholder="Apellido" required>
-                            </div>
-
-                            <div>
-                                <input class="input__text__big" type="text" placeholder="Número de CUIL" required>
-                            </div>
-                            
-                            <div>
-                                <input class="input__text__big" type="email" name="" id="" placeholder="Correo eletrónico" required>
-                            </div>
-
-                            <div>
-                                <textarea class="text__arear__setting" placeholder="Su consulta" name="" id=""></textarea>
-                            </div>
-                
-                            <div>
-                                <input class="btn--med btn__primary" type="submit" value="Enviar consulta" required>
-                            </div>
-                        </form>
-                    
-
-                    <div class="form__contacto__col">
-                        <img src="../image/contacto.webp" alt="">
-                    </div>
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                          <label for="inputEmail4" class="form-label">Email</label>
+                          <input type="email" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputPassword4" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="inputPassword4">
+                        </div>
+                        <div class="col-12">
+                          <label for="inputAddress" class="form-label">Address</label>
+                          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="col-12">
+                          <label for="inputAddress2" class="form-label">Address 2</label>
+                          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputCity" class="form-label">City</label>
+                          <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <div class="col-md-4">
+                          <label for="inputState" class="form-label">State</label>
+                          <select id="inputState" class="form-select">
+                            <option selected>Choose...</option>
+                            <option>...</option>
+                          </select>
+                        </div>
+                        <div class="col-md-2">
+                          <label for="inputZip" class="form-label">Zip</label>
+                          <input type="text" class="form-control" id="inputZip">
+                        </div>
+                        <div class="col-12">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                              Check me out
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <button type="submit" class="btn btn-primary">Sign in</button>
+                        </div>
+                      </form>
                     
                 </section>
                 
             </main>
         <!-- Fin Seccion Principal-->
 
-        <!--Inicio Footer-->
-            <footer>
-                <div class="footer">
-                    <div class="footer__contendor__columna">
-                        <h3>Trámites Frecuentes</h3>
-                        <ul class="lista__navegacion">
-                            <li><a class="lista__navegacion__link__off" href="./libre_deuda.html">Libre deudas</a></li>
-                            <li><a class="lista__navegacion__link__off" href="./pago_multas.html">Pago de multas</a></li>
-                            <li><a class="lista__navegacion__link__off" href="./descargos.html">Descargos</a></li>
-                        </ul>
+<!--Inicio Footer-->
+        <footer class="text-lg-start bg-light text-muted">
+
+            <div class="container p-4">
+                <!-- Apartado para las redes sociales -->
+                <section class="mb-4">
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
+                </section>
+
+                <!-- Apartado para la suscripción -->
+                <section>
+                    <form>
+                        <div class="row d-flex justify-content-center border-bottom">
+                            <div class="col-auto"><p class="pt-2"><strong>Suscribite a nuestro boletín</strong></p></div>
+                            <div class="col-md-5 col-12">
+                                <div class="form-outline form-white mb-4">
+                                    <input type="email" class="form-control" placeholder="Ingresa tu correo">
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <button type="submit" class="btn ro-btn-light mb-4">Suscribirse</button>
+                            </div>
+                        </div>
+                    </form>
+                
+                </section>
+                
+                <section>
+                    <br>
+                    <!--Sección de 3 columnas con información-->
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                            <h6 class="text-uppercase">Trámites Frecuentes</h6>
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="#!" class="footer-link">Libre Deuda</a></li>
+                                <li><a href="#!" class="footer-link">Pago de Multas</a></li>
+                                <li><a href="#!" class="footer-link">Descargos</a></li>
+                            </ul>
+                        </div>
+            
+                        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                            <h6 class="text-uppercase">Términos y Condiciones</h6>
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="#!" class="footer-link">Términos y Condiciones</a></li>
+                                <li><a href="#!" class="footer-link">Política de Privacidad</a></li>
+                                <li><a href="#!" class="footer-link">Sugerencias</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                            <h6 class="text-uppercase">Nosotros</h6>
+                            <ul class="list-unstyled mb-0">
+                                <li><span>San Juan, Argentina</span></li>
+                                <li><span>(+54) 0331 444123564</span></li>
+                                <li><span>contacto@juzgado.org</span></li>
+                            </ul>
+                        </div>
                     </div>
-                    
-                    <div class="footer__contendor__columna">
-                        <h3>Términos y Condiciones</h3>
-                        <ul class="lista__navegacion">
-                            <li><a class="lista__navegacion__link__off" href="./politica_privacidad.html">Política de privacidad</a></li>
-                            <li><a class="lista__navegacion__link__off" href="./terminos_condiciones.html">Términos y condiciones</a></li>
-                            <li><a class="lista__navegacion__link__off" href="./sugerencias.html">Sugerencias</a></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="footer__contendor__columna">
-                        <h3>Nosotros</h3>
-                        <ul class="lista__navegacion">
-                            <li><span>San Juan, Argentina</span></li>
-                            <li><span>(+54) 0331 444123564</span></li>
-                            <li><span>contacto@juzgadodefaltas.org</span></li>
-                        </ul>
-                    </div>
-                </div>
-            </footer>
-        <!--Fin Footer-->
+                </section>
+            
+            </div>
+
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">© 2022 Copyright:
+                <a class="text-white" href="https://github.com/maraushuaia" target="_blank">Rodrigo Muñoz</a>
+            </div>
+
+        </footer>
+
+        <script src="./js/bootstrap.bundle.min.js"></script>
 
     </body>
 </html>
