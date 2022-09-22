@@ -18,7 +18,7 @@
     color: #0000009f;    
 }
 
-.ro-nav {
+.ro-nav{
     background-color: #0000000a;
 }
 
@@ -27,7 +27,16 @@
     height: 22rem;
     background:linear-gradient(to right,rgba(0, 0, 0, 0.514),rgba(0, 0, 0, 0.514)), url("/image/header-page.webp");
     background-position: center;
-    color: #000000;
+    /* color: #000000; */
+}
+
+.ro-header-text{
+    width: 100%;
+    height: 22rem;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
 }
 
 .wrap-texto{
@@ -36,9 +45,9 @@
     justify-items: center
 }
 
-.ro-group-cards{
+/* .ro-group-cards{
     padding: 1rem;
-}
+} */
 
 .home-news-container{
     margin-left: 1rem;
@@ -80,7 +89,10 @@
     color: aliceblue;
 }
 
-
+.institucional{
+    background-color: #030303;
+    color: white;
+}
 
 
 /*---*/
