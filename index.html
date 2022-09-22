@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +13,8 @@
     </head>
 
     <body>
-        <!-- Inicio Navegadores-->
+
+<!-- Inicio Navegadores-->
         <header>
                 <!--Navedador de acceso-->
                 <div class="ro-top-bar">
@@ -21,13 +22,13 @@
                         <div class="row">
                             <div class="col-6">
                                 <div class="d-none d-md-inline-block ro-float-left">
-                                    <h6 class="d-none d-md-inline-block">Direccion</h6>
-                                    <h6 class="d-none d-md-inline-block">Telefono</h6>
+                                    <h6 class="d-none d-md-inline-block">San Juan, Argentina</h6>
+                                    <h6 class="d-none d-md-inline-block"> - (+54)0331-444123564</h6>
                                 </div>
                             </div>
                             <div class="col-6">
                                 <div class="d-none d-md-inline-block ro-float-right">
-                                    <a href="#" class="btn ro-btn-light"></span>Registrarse</a>
+                                    <a href="/pages/crear_cuenta.html" class="btn ro-btn-light"></span>Registrarse</a>
                                     <a href="/pages/acceso_portal.html" class="btn btn-primary"></span>Ingresar</a>
                                 </div>
                             </div>
@@ -35,7 +36,7 @@
                     </div>
                 </div>
                 <!--Menu Principal-->
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <nav class="navbar navbar-expand-lg navbar-light ro-nav">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="#">
                             <img src="./logo90.png" alt="Logo del Juzgado" width="42" height="42" class="d-inline-block align-text-center">
@@ -47,24 +48,17 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li class="nav-item"><a class="nav-link active font-menu" aria-current="page" href="#">Inicio</a></li>
-                                <li class="nav-item"><a class="nav-link font-menu" href="#">Institucional</a></li>
-                                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle font-menu" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Trámites Frecuentes
-                                    </a>
-                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <li><a class="dropdown-item font-menu" href="#">Libre Deuda</a></li>
-                                            <li><a class="dropdown-item font-menu" href="#">Pagos</a></li>
-                                            <li><a class="dropdown-item font-menu" href="#">Descargos</a></li>
-                                        </ul>
-                                </li>
+                                <li class="nav-item"><a class="nav-link font-menu" href="/pages/institucional.html">Institucional</a></li>
+                                <li class="nav-item"><a class="nav-link font-menu" href="/pages/tramites_frecuentes.html">Trámites Frecuentes</a></li>
                                 <li class="nav-item"><a class="nav-link font-menu" href="/pages/edictos.html">Edictos</a></li>
+                                <li class="nav-item"><a class="nav-link font-menu" href="/pages/noticias.html">Noticias</a></li>
                                 <li class="nav-item"><a class="nav-link font-menu" href="/pages/contacto.html">Contacto</a></li>
                             </ul>
                         </div>
                     </div>
                 </nav>
             </header>
-        <!-- Fin Navegadores-->
+<!-- Fin Navegadores-->
 
 
         <!--Inicio Sección Principal-->
@@ -78,26 +72,28 @@
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <a href="/pages/tramites_frecuentes.html"><img src="/image/slider_home.webp" class="d-block w-100" alt="..."></a>
-                                <div class="ro-carousel-caption d-none d-md-block">
-                                    <h5>Etiqueta de la primera diapositiva</h5>
-                                    <p>Algún contenido placeholder representativo para la primera diapositiva.</p>
+                                <a href="/pages/tramites_frecuentes.html"><img src="/image/slider_home1.webp" class="d-block w-100" alt="..."></a>
+                                <div class="ro-carousel-caption d-none d-md-block text-white">
+                                    <h5>Guía Rápida de Trámites</h5>
+                                    <p>Podrás averiguar cómo efectuar distintos trámites en línea.</p>
                                 </div>
                             </div>
                             
                             <div class="carousel-item">
-                                <a href="/pages/edictos.html"><img src="/image/slider_home.webp" class="d-block w-100" alt="..."></a>
-                                <div class="ro-carousel-caption d-none d-md-block">
-                                    <h5>Etiqueta de la segunda diapositiva</h5>
-                                    <p>Algún contenido placeholder representativo para la segunda diapositiva.</p>
-                                </div>
+                                <a href="/pages/edictos.html"><img src="/image/slider_home2.webp" class="d-block w-100" alt="..."></a>
+                                
+                                    <div class="ro-carousel-caption d-none d-md-block text-white">
+                                        <h5>Últimos Edictos</h5>
+                                        <p>Podrás conocer los últimos edictos publicados.</p>
+                                    </div>
+                                
                             </div>
                           
                             <div class="carousel-item">
-                                <a href="/pages/acceso_portal.html"><img src="/image/slider_home.webp" class="d-block w-100" alt="..."></a>
-                                <div class="ro-carousel-caption d-none d-md-block">
-                                    <h5>Etiqueta de la tercera diapositiva</h5>
-                                    <p>Algún contenido placeholder representativo para la tercera diapositiva.</p>
+                                <a href="/pages/acceso_portal.html"><img src="/image/slider_home3.webp" class="d-block w-100" alt="..."></a>
+                                <div class="ro-carousel-caption d-none d-md-block text-white">
+                                    <h5>Acceso al Sistema de Consultas</h5>
+                                    <p>Para averiguar sobre una causa, ingresá a tu ventanilla.</p>
                                 </div>
                             </div>
                         </div>
@@ -116,20 +112,19 @@
                 
                 <!-- NOTICIAS -->
                 
-                <section class="container">
-                    
-                    <div>
-                        <h2>NOTICIAS DESTACADAS</h2>
+            <div class="home-news-container">
+                <section class="home-news">
+                    <div class="d-flex flex-column align-items-center">
+                        <h3>NOTICIAS DESTACADAS</h3>
+                        <img class="imagen" src="./img/galeria1.jpg" alt="">
                     </div>
-
-
                 </section>
 
                 <section class="container">
                     <div class="row row-cols-1 row-cols-md-3 g-4">
                         <div class="col">
                             <div class="card h-100">
-                                <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/044.webp" class="card-img-top"
+                                <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/044.webp" class="card-img-top zoom"
                                 alt="Skyscrapers" />
                                 <div class="card-body">
                                     <h5 class="card-title">Modernizacion de Juzgados de Faltas</h5>
@@ -149,7 +144,7 @@
 
                         <div class="col">
                             <div class="card h-100">
-                                <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/043.webp" class="card-img-top"
+                                <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/043.webp" class="card-img-top zoom"
                                     alt="Los Angeles Skyscrapers" />
                                 <div class="card-body">
                                     <h5 class="card-title">Juzgados de Faltas: vías de comunicación e impresión de boletas de pago</h5>
@@ -165,8 +160,8 @@
                         
                         <div class="col">
                             <div class="card h-100">
-                                <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/042.webp" class="card-img-top"
-                                    alt="Palm Springs Road" />
+                                <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/042.webp" class="card-img-top zoom"
+                                    alt="Palm Springs Road"/>
                                 <div class="card-body">
                                     <h5 class="card-title">La tecnología al servicio de la Justicia</h5>
                                     <p class="card-text">
@@ -183,29 +178,34 @@
                         </div>
                     </div>
                 </section>
-
+            </div>
 
             <!-- BANNER VALOR UFA -->
-                <section>
-                    <div>
-                        <div>
-                            <div>
-                                <h3>Valor actual de la U.F.A.</h3>
+                <section class="container-fluid">
+                    
+                    <div class="row home-ufa">
+                        
+                            <div class="col-12">
+                                <div class="ufa-text">
+                                    <h3>Valor actual de la U.F.A.</h3>
+                                </div>
                             </div>
-                        </div>
-
-                        <div>
-                            <div>
-                                <h3>$50</h3>
+                            
+                            <div class="col-12">
+                                <div class="ufa">
+                                    <h3>$50</h3>
+                                </div>
                             </div>
-                        </div>
+                            
+                            <div class="col-12">
+                                <a href="./pages/ufa_historico.html">
+                                    <input type="button" value="Valores históricos">
+                                </a>
+                            </div>
+                        
                     </div>
 
-                    <div>
-                        <a href="./pages/ufa_historico.html">
-                            <input type="button" value="Ver el valor historico">
-                        </a>
-                    </div>
+                  
 
                 </section>
 
@@ -213,7 +213,7 @@
             
                 <!-- ESTADISTICAS -->
                 
-                <section class="container">
+                <!-- <section class="container">
                     <div class="row">
 
                         <div>
@@ -251,22 +251,14 @@
                             </article>
                         </div>
 
-                </section>
+                </section> -->
 
             </main>
     
 
-        <!--Inicio Footer-->
+<!--Inicio Footer-->
         <footer class="text-lg-start bg-light text-muted">
-
             <div class="container p-4">
-                <!-- Apartado para las redes sociales -->
-                <section class="mb-4">
-                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
-                </section>
-        
                 <!-- Apartado para la suscripción -->
                 <section>
                     <form>
@@ -282,9 +274,8 @@
                             </div>
                         </div>
                     </form>
-                   
                 </section>
-                
+
                 <section>
                     <br>
                     <!--Sección de 3 columnas con información-->
@@ -292,43 +283,36 @@
                         <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
                             <h6 class="text-uppercase">Trámites Frecuentes</h6>
                             <ul class="list-unstyled mb-0">
-                                <li><a href="#!" class="footer-link">Libre Deuda</a></li>
-                                <li><a href="#!" class="footer-link">Pago de Multas</a></li>
-                                <li><a href="#!" class="footer-link">Descargos</a></li>
+                                <li><a href="/pages/libre_deuda.html" class="footer-link">Libre Deuda</a></li>
+                                <li><a href="/pages/pago_multas.html" class="footer-link">Pago de Multas</a></li>
+                                <li><a href="/pages/descargos.html" class="footer-link">Descargos</a></li>
                             </ul>
                         </div>
-            
                         <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
                             <h6 class="text-uppercase">Términos y Condiciones</h6>
                             <ul class="list-unstyled mb-0">
-                                <li><a href="#!" class="footer-link">Términos y Condiciones</a></li>
-                                <li><a href="#!" class="footer-link">Política de Privacidad</a></li>
-                                <li><a href="#!" class="footer-link">Sugerencias</a></li>
+                                <li><a href="/pages/terminos_condiciones.html" class="footer-link">Términos y Condiciones</a></li>
+                                <li><a href="/pages/politica_privacidad.html" class="footer-link">Política de Privacidad</a></li>
+                                <li><a href="/pages/sugerencias.html" class="footer-link">Sugerencias</a></li>
                             </ul>
                         </div>
-
                         <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
                             <h6 class="text-uppercase">Nosotros</h6>
                             <ul class="list-unstyled mb-0">
                                 <li><span>San Juan, Argentina</span></li>
                                 <li><span>(+54) 0331 444123564</span></li>
-                                <li><span>contacto@juzgado.org</span></li>
+                                <li><span>contacto@juzgadodefaltas.com.ar</span></li>
                             </ul>
                         </div>
                     </div>
                 </section>
-            
             </div>
 
-            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">© 2022 Copyright:
-                <a class="text-white" href="https://github.com/maraushuaia" target="_blank">Rodrigo Muñoz</a>
+            <div class="text-center p-3 ro-top-bar" >© 2022 Copyright:
+                <a href="https://github.com/maraushuaia" target="_blank">Rodrigo Muñoz</a>
             </div>
-
         </footer>
 
         <script src="./js/bootstrap.bundle.min.js"></script>
-        
- 
-
     </body>
 </html>

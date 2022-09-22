@@ -1,46 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Juzgado - Pago de infracciones</title>
+        <link href="/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="../css/styles.css">
         <link rel="shortcut icon" href="../favicon.ico">
     </head>
 
     <body>
-        <!-- Inicio Navegadores-->
+<!-- Inicio Navegadores-->
             <header>
-                    <!--Navedador de acceso-->
-                    <nav class="nav__access">
-                        <form class="display__inline" action="" method="post">
-                            <input placeholder="Buscar trámites ..." class="nav__access__input__search" type="text" value="">
-                        </form>
-                        
-                        <form class="display__inline" action="./crear_cuenta.html">
-                            <input class="btn btn__secondary--white" type="submit" value="Registrarse"></a>
-                        </form>
-
-                        <form class="display__inline" action="./acceso_portal.html">
-                            <input class="btn btn__primary" type="submit" value="Ingresar"></a>
-                        </form>
-                    </nav>
-                    
-                    <!--Navedador principal-->
-                    <nav class="nav__main">
-                        <div>
-                            <a class="nav__main__block__link" href="../index.html">Inicio</a>
-                            <a class="nav__main__block__link" href="./institucional.html">Institucional</a>
-                            <a class="nav__main__block__link" href="./tramites_frecuentes.html">Trámites Frecuentes</a>
-                            <a class="nav__main__block__link" href="./edictos.html">Edictos</a>
-                            <a class="nav__main__block__link" href="./noticias.html">Noticias</a>
-                            <a class="nav__main__block__link" href="./contacto.html">Contacto</a>
+                <!--Navedador de acceso-->
+                <div class="ro-top-bar">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="d-none d-md-inline-block ro-float-left">
+                                    <h6 class="d-none d-md-inline-block">San Juan, Argentina</h6>
+                                    <h6 class="d-none d-md-inline-block"> - (+54)0331-444123564</h6>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-none d-md-inline-block ro-float-right">
+                                    <a href="./crear_cuenta.html" class="btn ro-btn-light"></span>Registrarse</a>
+                                    <a href="./acceso_portal.html" class="btn btn-primary"></span>Ingresar</a>
+                                </div>
+                            </div>
                         </div>
-                    </nav>
+                    </div>
+                </div>
+                <!--Menu Principal-->
+                <nav class="navbar navbar-expand-lg navbar-light ro-nav">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <img src="/logo90.png" alt="Logo del Juzgado" width="42" height="42" class="d-inline-block align-text-center">
+                            JUZGADO DE FALTAS
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item"><a class="nav-link active font-menu" aria-current="page" href="/index.html">Inicio</a></li>
+                                <li class="nav-item"><a class="nav-link font-menu" href="./institucional.html">Institucional</a></li>
+                                <li class="nav-item"><a class="nav-link font-menu" href="./tramites_frecuentes.html">Trámites Frecuentes</a></li>
+                                <li class="nav-item"><a class="nav-link font-menu" href="./edictos.html">Edictos</a></li>
+                                <li class="nav-item"><a class="nav-link font-menu" href="./noticias.html">Noticias</a></li>
+                                <li class="nav-item"><a class="nav-link font-menu" href="./contacto.html">Contacto</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
             </header>
-        <!-- Fin Navegadores-->
-
+<!-- Fin Navegadores-->
 
         <!--Inicio Sección Principal-->
             <main class="form_contacto">
@@ -49,38 +64,65 @@
             </main>
         <!-- Fin Seccion Principal-->
 
-        <!--Inicio Footer-->
-            <footer>
-                <div class="footer">
-                    <div class="footer__contendor__columna">
-                        <h3>Trámites Frecuentes</h3>
-                        <ul class="lista__navegacion">
-                            <li><a class="lista__navegacion__link__off" href="./libre_deuda.html">Libre deudas</a></li>
-                            <li><a class="lista__navegacion__link__off" href="./pago_multas.html">Pago de multas</a></li>
-                            <li><a class="lista__navegacion__link__off" href="./descargos.html">Descargos</a></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="footer__contendor__columna">
-                        <h3>Términos y Condiciones</h3>
-                        <ul class="lista__navegacion">
-                            <li><a class="lista__navegacion__link__off" href="./politica_privacidad.html">Política de privacidad</a></li>
-                            <li><a class="lista__navegacion__link__off" href="./terminos_condiciones.html">Términos y condiciones</a></li>
-                            <li><a class="lista__navegacion__link__off" href="./sugerencias.html">Sugerencias</a></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="footer__contendor__columna">
-                        <h3>Nosotros</h3>
-                        <ul class="lista__navegacion">
-                            <li><span>San Juan, Argentina</span></li>
-                            <li><span>(+54) 0331 444123564</span></li>
-                            <li><span>contacto@juzgadodefaltas.org</span></li>
-                        </ul>
-                    </div>
+ <!--Inicio Footer-->
+            <footer class="text-lg-start bg-light text-muted">
+                <div class="container p-4">
+                    <!-- Apartado para la suscripción -->
+                    <section>
+                        <form>
+                            <div class="row d-flex justify-content-center border-bottom">
+                                <div class="col-auto"><p class="pt-2"><strong>Suscribite a nuestro boletín</strong></p></div>
+                                <div class="col-md-5 col-12">
+                                    <div class="form-outline form-white mb-4">
+                                        <input type="email" class="form-control" placeholder="Ingresa tu correo">
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <button type="submit" class="btn ro-btn-light mb-4">Suscribirse</button>
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+
+                    <section>
+                        <br>
+                        <!--Sección de 3 columnas con información-->
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                                <h6 class="text-uppercase">Trámites Frecuentes</h6>
+                                <ul class="list-unstyled mb-0">
+                                    <li><a href="./libre_deuda.html" class="footer-link">Libre Deuda</a></li>
+                                    <li><a href="./pago_multas.html" class="footer-link">Pago de Multas</a></li>
+                                    <li><a href="./descargos.html" class="footer-link">Descargos</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                                <h6 class="text-uppercase">Términos y Condiciones</h6>
+                                <ul class="list-unstyled mb-0">
+                                    <li><a href="./terminos_condiciones.html" class="footer-link">Términos y Condiciones</a></li>
+                                    <li><a href="./politica_privacidad.html" class="footer-link">Política de Privacidad</a></li>
+                                    <li><a href="/pages/sugerencias.html" class="footer-link">Sugerencias</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                                <h6 class="text-uppercase">Nosotros</h6>
+                                <ul class="list-unstyled mb-0">
+                                    <li><span>San Juan, Argentina</span></li>
+                                    <li><span>(+54) 0331 444123564</span></li>
+                                    <li><span>contacto@juzgadodefaltas.com.ar</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="text-center p-3 ro-top-bar" >© 2022 Copyright:
+                    <a href="https://github.com/maraushuaia" target="_blank">Rodrigo Muñoz</a>
                 </div>
             </footer>
-        <!--Fin Footer-->
+
+            <script src="/js/bootstrap.bundle.min.js"></script>
+
 
     </body>
 </html>
