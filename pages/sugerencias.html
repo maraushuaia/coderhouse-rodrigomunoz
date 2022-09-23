@@ -64,35 +64,38 @@
 
                 <section class="container p-4">
                         
+                    <section class="container p-4">
                         <div>
-                            <p>¿Querés comentarnos algo para mejorar nuestro sitio web?</p>
+                            <h2>¿Querés comentarnos algo para mejorar nuestro sitio web?</h2>
+                            <span>Completá el siguiente formulario para enviarnos todos tus comentarios.</span>
                         </div>
-                    
-                        <div>
+                    </section>
+                                            
+                        <div class="container p-4">
                             <form accept-charset="UTF-8">
                                 <div>
                                     <label for="">Tu apellido completo<span title="Este campo es obligatorio.">*</span></label>
-                                    <input class="input__text" required placeholder="Extensión máxima: 30 caracteres" type="text" id="" name="" value="" size="60" maxlength="128">
+                                    <input class="form-control" required placeholder="Extensión máxima: 60 caracteres" type="text" id="" name="" value="" size="60" maxlength="128">
                                 </div>
                                     
                                 <div>
                                     <label for="">Tu nombre completo<span title="Este campo es obligatorio.">*</span></label>
-                                    <input class="input__text" required placeholder="Extensión máxima: 60 caracteres" type="text" id="" name="" value="" size="60" maxlength="128">
+                                    <input class="form-control" required placeholder="Extensión máxima: 60 caracteres" type="text" id="" name="" value="" size="60" maxlength="128">
                                 </div>
                                     
                                 <div>
                                     <label for="">Escribí tu número de CUIL<span title="Este campo es obligatorio.">*</span></label>
-                                    <input class="input__text" required placeholder="Solo números, sin guiones ni espacios" type="text" id="" name="" value="" size="60" maxlength="128">
+                                    <input class="form-control" required placeholder="Solo números, sin guiones ni espacios" type="text" id="" name="" value="" size="60" maxlength="128">
                                 </div>
 
                                 <div>
                                     <label for="">Tu correo electrónico <span title="Este campo es obligatorio.">*</span></label>
-                                    <input class="input__text" required="required" type="email" id="" name="" size="60">
+                                    <input class="form-control" placeholder="micorreo@ejemplo.com" required="required" type="email" id="" name="" size="60">
                                 </div>
                                 
                                 <div>
                                     <label for="">¿Por cuál motivo nos escribís? <span title="Este campo es obligatorio.">*</span></label>
-                                    <select class="input__text" id="" name="">
+                                    <select class="form-control" id="" name="">
                                         <option value="" selected="selected">- Seleccionar -</option>
                                         <option value="1">Quiero sugerirles algo para mejorar su sitio web</option>
                                         <option value="2">No encontré o no entendí la información</option>
@@ -104,12 +107,12 @@
                                 <div>
                                     <label for="">Tu comentario <span title="Este campo es obligatorio.">*</span></label>
                                     <div>
-                                        <textarea class="text__arear__setting" placeholder="Contanos cómo podemos mejorar." id="" name=""></textarea>
+                                        <textarea class="form-control" placeholder="Contanos cómo podemos mejorar." id="" name=""></textarea>
                                     </div>
                                 </div>
                             </form>
                             <div>
-                                <button class="btn--med btn__primary" type="submit" name="" value="Enviar mi comentario">Enviar mi sugerencia</button>
+                                <button class="btn btn-primary" type="submit" name="" value="Enviar mi comentario">Enviar mi sugerencia</button>
                             </div>
                         </div>
                 </section>
