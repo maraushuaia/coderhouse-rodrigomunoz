@@ -45,7 +45,7 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item"><a class="nav-link active font-menu" aria-current="page" href="/index.html">Inicio</a></li>
+                                <li class="nav-item"><a class="nav-link font-menu" aria-current="page" href="/index.html">Inicio</a></li>
                                 <li class="nav-item"><a class="nav-link font-menu" href="./institucional.html">Institucional</a></li>
                                 <li class="nav-item"><a class="nav-link font-menu" href="./tramites_frecuentes.html">Trámites Frecuentes</a></li>
                                 <li class="nav-item"><a class="nav-link font-menu" href="./edictos.html">Edictos</a></li>
@@ -56,28 +56,30 @@
                     </div>
                 </nav>
             </header>
-<!-- Fin Navegadores-->
 
 
-        <!--Inicio Sección Principal-->
+
+<!--Inicio Sección Principal-->
             <main>
-                <div class="ro-header-pages ro-header-text">
+                <div class="ro-header-acceso ro-header-text">
                     <h2>Acceso</h2>
 
                 </div>
+                
+                
                 <section class="container p-4">
                     <h2>Ingresá a tu cuenta</h2>
-                    <form>
-                        <div>
-                            <input type="text" placeholder="Ingresa tu CUIL" required>
+                    <form class="row g-3">
+                        <div class="col-md-8">
+                            <input type="text" class="form-control" placeholder="Ingresa tu CUIL" required>
                         </div>
 
-                        <div>
-                            <input type="password" placeholder="Ingresa tu contraseña" required>
+                        <div class="col-md-8">
+                            <input type="password" class="form-control" placeholder="Ingresa tu contraseña" required>
                         </div>
 
-                        <div>
-                            <input type="submit" value="Ingresar">
+                        <div class="col-8">
+                            <button type="submit" class="btn btn-primary">Ingresar</button>
                         </div>
                     </form>
                     <div>
@@ -88,7 +90,7 @@
                 <section class="container p-4">
                     <h2>¿No tenés cuenta?</h2>
                     <form action="./crear_cuenta.html">
-                        <input type="submit" value="Creá tu cuenta">
+                        <button type="submit" class="btn btn-success">Creá tu cuenta</button>
                     </form>
                 </section>
             </main>
@@ -115,9 +117,9 @@
                     </section>
 
                     <section>
-                        <br>
+                        
                         <!--Sección de 3 columnas con información-->
-                        <div class="row">
+                        <div class="row pt-5">
                             <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
                                 <h6 class="text-uppercase">Trámites Frecuentes</h6>
                                 <ul class="list-unstyled mb-0">

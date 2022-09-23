@@ -44,7 +44,7 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item"><a class="nav-link active font-menu" aria-current="page" href="/index.html">Inicio</a></li>
+                                <li class="nav-item"><a class="nav-link font-menu" aria-current="page" href="/index.html">Inicio</a></li>
                                 <li class="nav-item"><a class="nav-link font-menu" href="./institucional.html">Institucional</a></li>
                                 <li class="nav-item"><a class="nav-link font-menu" href="./tramites_frecuentes.html">Trámites Frecuentes</a></li>
                                 <li class="nav-item"><a class="nav-link font-menu" href="./edictos.html">Edictos</a></li>
@@ -60,39 +60,55 @@
 
 <!--Inicio Sección Principal-->
             <main>
-                <div class="ro-header-pages ro-header-text">
+                <div class="ro-header-acceso ro-header-text">
                     <h2>Creá tu Cuenta</h2>
                 </div>
                 
                 <section class="container p-4">
                 
-                    <form action="" method="post">
-                        <div>
-                            <input class="input__text" type="text" placeholder="Nombres" required>
+                    <form class="row g-3">
+                        <div class="col-md-12">
+                            <label for="inputAddress" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" required>
                         </div>
+                        <div class="col-md-12">
+                            <label for="inputAddress" class="form-label">Apellido</label>
+                            <input type="text" class="form-control required">
+                        </div>
+                        <div class="col-md-12">
+                            <label for="inputAddress" class="form-label">Nro. de CUIL</label>
+                            <input type="text" class="form-control required">
+                        </div>
+                        <div class="col-md-12">
+                            <label for="inputAddress" class="form-label">Nro. de Teléfono</label>
+                            <input type="text" class="form-control required">
+                        </div>
+                        <div class="col-md-12">
+                            <label for="inputAddress" class="form-label">Direccion</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col-md-12">
+                          <label for="inputEmail4" class="form-label">Email</label>
+                          <input type="email" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputPassword4" class="form-label">Contraseña</label>
+                          <input type="password" class="form-control" id="inputPassword4">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputPassword4" class="form-label">Repetir Contraseña</label>
+                            <input type="password" class="form-control" id="inputPassword4">
+                          </div>
+                          <div class="d-inline-block">
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                          </div>
+                        </form>      
                         
-                        <div>
-                            <input class="input__text" type="text" placeholder="Apellido" required>
-                        </div>
-
-                        <div>
-                            <input class="input__text" type="text" placeholder="Número de CUIL" required>
-                        </div>
-
-                        <div>
-                            <input class="input__text" type="email" name="" id="" placeholder="Correo eletrónico" required>
-                        </div>
+                        <form class="d-inline-block" action="./acceso_portal.html">
+                            <input class="btn btn-secondary" type="submit" value="Volver"></a>
+                        </form>
                         
-                        <div>
-                            <input class="input__text" type="password" placeholder="Ingrese una contraseña" required>
-                        </div>
-                    </form>
-                    <form class="display__inline" action="./acceso_portal.html">
-                        <input class="btn btn__secondary--white" type="submit" value="Volver"></a>
-                    </form>
-                    <form class="display__inline" action="#">
-                        <input class="btn btn__primary" type="submit" value="Enviar"></a>
-                    </form>
+                    
                 </section>
 
             </main>
@@ -119,9 +135,8 @@
                     </section>
 
                     <section>
-                        <br>
                         <!--Sección de 3 columnas con información-->
-                        <div class="row">
+                        <div class="row pt-5">
                             <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
                                 <h6 class="text-uppercase">Trámites Frecuentes</h6>
                                 <ul class="list-unstyled mb-0">

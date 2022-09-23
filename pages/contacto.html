@@ -45,12 +45,12 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item"><a class="nav-link active font-menu" aria-current="page" href="/index.html">Inicio</a></li>
-                                <li class="nav-item"><a class="nav-link font-menu" href="./institucional.html">Institucional</a></li>
-                                <li class="nav-item"><a class="nav-link font-menu" href="./tramites_frecuentes.html">Trámites Frecuentes</a></li>
-                                <li class="nav-item"><a class="nav-link font-menu" href="./edictos.html">Edictos</a></li>
-                                <li class="nav-item"><a class="nav-link font-menu" href="./noticias.html">Noticias</a></li>
-                                <li class="nav-item"><a class="nav-link font-menu" href="#">Contacto</a></li>
+                            <li class="nav-item"><a class="nav-link font-menu" aria-current="page" href="/index.html">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link font-menu" href="./institucional.html">Institucional</a></li>
+                            <li class="nav-item"><a class="nav-link font-menu" href="./tramites_frecuentes.html">Trámites Frecuentes</a></li>
+                            <li class="nav-item"><a class="nav-link font-menu" href="./edictos.html">Edictos</a></li>
+                            <li class="nav-item"><a class="nav-link font-menu" href="./noticias.html">Noticias</a></li>
+                            <li class="nav-item"><a class="nav-link active font-menu" href="#">Contacto</a></li>
                         </ul>
                     </div>
                 </div>
@@ -75,57 +75,44 @@
                 </section>
                  
                 <section class="container p-4">
-                        
                     <form class="row g-3">
                         <div class="col-md-6">
+                            <label for="inputAddress" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputAddress" class="form-label">Apellido</label>
+                            <input type="text" class="form-control required">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputAddress" class="form-label">Nro. de CUIL</label>
+                            <input type="text" class="form-control required">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputAddress" class="form-label">Nro. de Teléfono</label>
+                            <input type="text" class="form-control required">
+                        </div>
+                        <div class="col-md-12">
+                            <label for="inputAddress" class="form-label">Direccion</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col-md-12">
                           <label for="inputEmail4" class="form-label">Email</label>
                           <input type="email" class="form-control" id="inputEmail4">
                         </div>
-                        <div class="col-md-6">
-                          <label for="inputPassword4" class="form-label">Password</label>
-                          <input type="password" class="form-control" id="inputPassword4">
+                        <div class="col-md-12">
+                            <label for="inputAddress" class="form-label">Consulta</label>
+                            <textarea class="form-control" rows="10" placeholder="Ingrese su consulta" required></textarea>
                         </div>
                         <div class="col-12">
-                          <label for="inputAddress" class="form-label">Address</label>
-                          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                          <button type="submit" class="btn btn-primary">Enviar</button>
                         </div>
-                        <div class="col-12">
-                          <label for="inputAddress2" class="form-label">Address 2</label>
-                          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                        </div>
-                        <div class="col-md-6">
-                          <label for="inputCity" class="form-label">City</label>
-                          <input type="text" class="form-control" id="inputCity">
-                        </div>
-                        <div class="col-md-4">
-                          <label for="inputState" class="form-label">State</label>
-                          <select id="inputState" class="form-select">
-                            <option selected>Choose...</option>
-                            <option>...</option>
-                          </select>
-                        </div>
-                        <div class="col-md-2">
-                          <label for="inputZip" class="form-label">Zip</label>
-                          <input type="text" class="form-control" id="inputZip">
-                        </div>
-                        <div class="col-12">
-                          <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="gridCheck">
-                            <label class="form-check-label" for="gridCheck">
-                              Check me out
-                            </label>
-                          </div>
-                        </div>
-                        <div class="col-12">
-                          <button type="submit" class="btn btn-primary">Sign in</button>
-                        </div>
-                      </form>
-                    
+                    </form>
                 </section>
                 
                 <section>
                     <div>
-                        
+                        <!--Podría ir un mapa de ubicación-->        
                     </div>
                 </section>
 
@@ -154,9 +141,8 @@
                     </section>
 
                     <section>
-                        <br>
                         <!--Sección de 3 columnas con información-->
-                        <div class="row">
+                        <div class="row pt-5">
                             <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
                                 <h6 class="text-uppercase">Trámites Frecuentes</h6>
                                 <ul class="list-unstyled mb-0">

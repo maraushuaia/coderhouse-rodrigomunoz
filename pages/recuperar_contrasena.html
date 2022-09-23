@@ -44,7 +44,7 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item"><a class="nav-link active font-menu" aria-current="page" href="/index.html">Inicio</a></li>
+                                <li class="nav-item"><a class="nav-link font-menu" aria-current="page" href="/index.html">Inicio</a></li>
                                 <li class="nav-item"><a class="nav-link font-menu" href="./institucional.html">Institucional</a></li>
                                 <li class="nav-item"><a class="nav-link font-menu" href="./tramites_frecuentes.html">Trámites Frecuentes</a></li>
                                 <li class="nav-item"><a class="nav-link font-menu" href="./edictos.html">Edictos</a></li>
@@ -55,29 +55,33 @@
                     </div>
                 </nav>
             </header>
-<!-- Fin Navegadores-->
 
-        <!--Inicio Sección Principal-->
+
+<!--Inicio Sección Principal-->
             <main>
-                <section class="portal__login">
-                    <h2>Recuperá tu contraseña</h2>
-                    <p>Al ingresar tu número de CUIL envíaremos un correo a tu casilla de correo electrónica que registraste cuando te diste de alta.</p>
-                    <form action="">
-                        <input class="input__text" required placeholder="Ingresá tu CUIL" type="text" id="" name="" value="" size="60" maxlength="128">
-                    </form>
-                    
-                    <form class="display__inline" action="./acceso_portal.html">
-                        <input class="btn btn__secondary--white" type="submit" value="Volver"></a>
-                    </form>
+                <section>
+                    <div class="ro-header-acceso ro-header-text">
+                        <h2>Recuperá tu contraseña</h2>
+                    </div>
 
-                    <form class="display__inline" action="#">
-                        <input class="btn btn__primary" type="submit" value="Enviar"></a>
-                    </form>
+                    <div class="container p-4">
+                        <p>Al ingresar tu número de CUIL envíaremos un correo a tu casilla de correo electrónica que registraste cuando te diste de alta.</p>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control" placeholder="Ingresa tu CUIL" required>
+                        </div>
+                        
+                        <form class="d-inline-block" action="./acceso_portal.html">
+                            <input class="btn btn-secondary" type="submit" value="Volver"></a>
+                        </form>
 
-
+                        <form class="d-inline-block" action="#">
+                            <button type="submit" class="btn btn-success">Enviar</button>
+                        </form>
+                        
+                    </div>
                 </section>
             </main>
-        <!-- Fin Seccion Principal-->
+        
 
 <!--Inicio Footer-->
             <footer class="text-lg-start bg-light text-muted">
@@ -100,9 +104,8 @@
                     </section>
 
                     <section>
-                        <br>
                         <!--Sección de 3 columnas con información-->
-                        <div class="row">
+                        <div class="row pt-5">
                             <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
                                 <h6 class="text-uppercase">Trámites Frecuentes</h6>
                                 <ul class="list-unstyled mb-0">

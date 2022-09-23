@@ -27,7 +27,20 @@
     height: 22rem;
     background:linear-gradient(to right,rgba(0, 0, 0, 0.514),rgba(0, 0, 0, 0.514)), url("/image/header-page.webp");
     background-position: center;
-    /* color: #000000; */
+}
+
+.ro-header-tramites{
+    width: 100%;
+    height: 22rem;
+    background:linear-gradient(to right,rgba(0, 0, 0, 0.514),rgba(0, 0, 0, 0.514)), url("/image/header-tramites.webp");
+    background-position: center;
+}
+
+.ro-header-acceso{
+    width: 100%;
+    height: 22rem;
+    background:linear-gradient(to right,rgba(0, 0, 0, 0.514),rgba(0, 0, 0, 0.514)), url("/image/header-acceso.webp");
+    background-position: center;
 }
 
 .ro-header-text{
@@ -45,9 +58,17 @@
     justify-items: center
 }
 
-/* .ro-group-cards{
-    padding: 1rem;
-} */
+.ro-img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+
+
+
+
+
 
 .home-news-container{
     margin-left: 1rem;
