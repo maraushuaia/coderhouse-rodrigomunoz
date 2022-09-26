@@ -13,44 +13,142 @@
     font-size: 1.2rem;
 }
 
-.ro-footer{
-    background-color: #0000000a;
-    color: #0000009f;    
+
+/*Color Sección COPYRIGHT*/
+.copyright{
+    background-color: #6f42c1;
+    color: white;
 }
 
+
+/*Color Sección MENU PRINCIPAL*/
 .ro-nav{
-    background-color: #0000000a;
+    /* background-image:linear-gradient(to right,#6f42c1 0,#6f42c1 60%,#c52b78 100%); */
+    background-color: #6f42c1;
+}
+
+/*Color Para FORMULARIOS ROSADO*/
+.form-rosado{
+    background-color: #eca3c80c;
+}
+
+/*Color ROSADO*/
+.fondo-rosado{
+    background-color: #c52b780c;
 }
 
 .ro-header-pages{
     width: 100%;
-    height: 22rem;
+    height: 5rem;
     background:linear-gradient(to right,rgba(0, 0, 0, 0.514),rgba(0, 0, 0, 0.514)), url("/image/header-page.webp");
     background-position: center;
+    /* object-fit: cover; */
 }
 
-.ro-header-tramites{
-    width: 100%;
-    height: 22rem;
-    background:linear-gradient(to right,rgba(0, 0, 0, 0.514),rgba(0, 0, 0, 0.514)), url("/image/header-tramites.webp");
-    background-position: center;
-}
 
-.ro-header-acceso{
+/*Defino Propiedades del Encabezado de Paginas*/
+.encabezado-pagina{
     width: 100%;
-    height: 22rem;
-    background:linear-gradient(to right,rgba(0, 0, 0, 0.514),rgba(0, 0, 0, 0.514)), url("/image/header-acceso.webp");
-    background-position: center;
-}
-
-.ro-header-text{
-    width: 100%;
-    height: 22rem;   
+    height: 15rem;
+    background-color: #c52b780c;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #ffffff;
+    color: #6f42c1;
 }
+
+/* Carousel base class */
+.carousel-home {
+    margin-bottom: 4rem;
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+  
+/* Declare heights because of positioning of img element */
+.carousel-item {
+    height: 32rem;
+}
+
+
+.carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+}
+
+
+.text-pink{
+    color: #c52b78;
+    
+}
+
+.accordion-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 1.25rem;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+    border: 0;
+    border-radius: 0;
+    overflow-anchor: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
+}
+
+
+
+
+/*Redes Sociales*/
+.social{
+    width:15rem;
+    width:11rem;
+    display:flex;
+    padding: 10px;
+    border-radius:10px;
+}
+.social >a{
+    width:25%;
+    font-size:2rem;
+    box-shadow: #ccdbe8 3px 3px 6px 0px, #ffffff -3px -3px 6px 1px;
+    height:2rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    text-decoration: none;
+    border-radius: 2rem;
+    background:#fff;
+    margin:10px;
+    transition: 0.4s;
+    color: #c52b78;
+}
+
+.social >a:hover{
+   transform:translateY(-10px);
+   color: var(--color);
+}
+
+@keyframes sTransition {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 400%;
+    }
+}
+
+
+
 
 .wrap-texto{
     color:white;
@@ -63,8 +161,6 @@
     margin: 0 auto;
     max-width: 100%;
 }
-
-
 
 
 
@@ -93,6 +189,7 @@
     transition: width 2s, height 2s, transform 1s;
 }
 
+/*Animación ZOOM fotos Noticias Home*/
 .zoom:hover{
     transform : scale(.95);
 }
@@ -124,10 +221,42 @@
 /*---*/
 
 .ro-btn-light{
-    background-color: #ffffffe1;
-    border-color: #0d6efd;
-    color:#0d6efd;
+    background-color: #00B49B;
+    border-color: #00B49B;
+    color: white;
 }
+
+.btn-primary {
+    color: #fff;
+    background-color: #6f42c1;
+    border-color: #6f42c1;
+  }
+  .btn-primary:hover {
+    color: #fff;
+    background-color: #462a7a;
+    border-color: #462a7a;
+  }
+  .btn-check:focus + .btn-primary, .btn-primary:focus {
+    color: #fff;
+    background-color: #462a7a;
+    border-color: #0a58ca; 
+    box-shadow: 0 0 0 0.25rem #3184fd80;
+  }
+  .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #462a7a;
+    border-color: #0a53be;
+  }
+  .btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.25rem #3184fd80;
+  }
+  .btn-primary:disabled, .btn-primary.disabled {
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+  }
+
+
 
 .ro-float-right {
     float:right;
@@ -137,22 +266,24 @@
     float:left;
 } 
 
-.ro-top-bar {
-    padding: .5rem 0;
-    background-color: #1d5f9c23;
-}
+/*Barra superior de ACCESO*/
 
 .navbar-collapse{
     flex-basis: 100%;
     flex-grow: 0;
 }
 
+
+
+/*Configuraciones del Footer y animaciones*/
 .footer-link {
     display: block;
-    color: #0d6efd;
+    /* color: #0d6efd; */
+    color: #c52b78;
     text-decoration: none;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
   }
+
 
 @media (prefers-reduced-motion: reduce) {
     .footer-link {
@@ -161,7 +292,8 @@
 }
 
 .footer-link:hover, .footer-link:focus {
-    color: #0a58ca;
+    /* color: #0a58ca; */
+    color: #462a7a;
 }
 
 .footer-link.disabled {
@@ -169,6 +301,9 @@
     pointer-events: none;
     cursor: default;
 }
+
+
+
 
 .ro-carousel-caption {
     position: absolute;
@@ -184,3 +319,69 @@
 
 
 
+/*Seccion de noticias*/
+                        
+.popular-post{
+    background:#DDDDDD;    
+}
+
+.line-item  {
+    background: url("https://bootdey.com/img/Content/border-top-dotted.gif") repeat-x scroll left top rgba(0, 0, 0, 0);
+    margin: 0 0 0 30px;
+    padding: 25px 0 15px;
+}
+
+.content-image {
+    float: right;
+    margin-bottom: 10px;
+    margin-left: 25px;
+    margin-top: 5px;
+}
+
+.post-title {
+    margin-bottom: 7px;
+    margin-top: 3px;
+}
+
+.post-title, post-title a {
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.summary {
+    color: #666;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 8px;
+}
+
+.teaser {
+    margin-bottom: 32px;
+    margin-top: 19px;
+    text-align: center;
+}
+
+.article-info {
+    padding: 0 29px;
+}
+.item-odd .article-category {
+    margin-top: 8px;
+}
+
+.article-title {
+    margin-bottom: 7px;
+    margin-top: 3px;
+}
+.article-title, .subfeatured .article-title a {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 20px;
+}
+
+.article-summary {
+    color: #666;
+    font-size: 14px;
+    line-height: 16px;
+    max-height: 64px;
+    overflow: hidden;
+}                    

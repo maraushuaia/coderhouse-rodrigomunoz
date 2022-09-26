@@ -5,121 +5,113 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Juzgado - Contacto</title>
-        <link href="/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
         <link rel="stylesheet" href="../css/styles.css">
         <link rel="shortcut icon" href="../favicon.ico">
     </head>
 
     <body>
 <!-- Inicio Navegadores-->
-            <header>
-                <!--Navedador de acceso-->
-                <div class="ro-top-bar">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="d-none d-md-inline-block ro-float-left">
-                                    <h6 class="d-none d-md-inline-block">San Juan, Argentina</h6>
-                                    <h6 class="d-none d-md-inline-block"> - (+54)0331-444123564</h6>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="d-none d-md-inline-block ro-float-right">
-                                    <a href="./crear_cuenta.html" class="btn ro-btn-light"></span>Registrarse</a>
-                                    <a href="./acceso_portal.html" class="btn btn-primary"></span>Ingresar</a>
-                                </div>
-                            </div>
-                        </div>
+        <header>
+            <!--Menu Principal-->
+            <nav class="navbar navbar-expand-lg navbar-light ro-nav">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-white" href="../index.html">
+                        <img src="../logo-balanza.png" alt="Logo del Juzgado" width="42" height="42" class="d-inline-block align-text-center">
+                        JUZGADO DE FALTAS
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link font-menu text-white" aria-current="page" href="../index.html">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link font-menu text-white" href="./institucional.html">Institucional</a></li>
+                            <li class="nav-item"><a class="nav-link font-menu text-white" href="./tramites_frecuentes.html">Trámites Frecuentes</a></li>
+                            <li class="nav-item"><a class="nav-link font-menu text-white" href="./edictos.html">Edictos</a></li>
+                            <li class="nav-item"><a class="nav-link font-menu text-white" href="./noticias.html">Noticias</a></li>
+                            <li class="nav-item"><a class="nav-link font-menu text-white" href="./contacto.html">Contacto</a></li>
+                            <li class="nav-item"><a class="nav-link font-menu text-white" href="./acceso_portal.html">Acceso</a></li>
+                        </ul>
                     </div>
                 </div>
-                <!--Menu Principal-->
-                <nav class="navbar navbar-expand-lg navbar-light ro-nav">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="#">
-                            <img src="/logo90.png" alt="Logo del Juzgado" width="42" height="42" class="d-inline-block align-text-center">
-                            JUZGADO DE FALTAS
-                        </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item"><a class="nav-link font-menu" aria-current="page" href="/index.html">Inicio</a></li>
-                                <li class="nav-item"><a class="nav-link font-menu" href="./institucional.html">Institucional</a></li>
-                                <li class="nav-item"><a class="nav-link font-menu" href="./tramites_frecuentes.html">Trámites Frecuentes</a></li>
-                                <li class="nav-item"><a class="nav-link font-menu" href="./edictos.html">Edictos</a></li>
-                                <li class="nav-item"><a class="nav-link font-menu" href="./noticias.html">Noticias</a></li>
-                                <li class="nav-item"><a class="nav-link font-menu" href="./contacto.html">Contacto</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </header>
+            </nav>
+        </header>
 
 <!--Inicio Sección Principal-->
             <main>
-                <div class="ro-header-pages ro-header-text">
+                <div class="encabezado-pagina">
                     <h2>SUGERENCIAS</h2>
                 </div>
 
                 <section class="container p-4">
+                    <div>
+                        <h2>¿Querés comentarnos algo para mejorar nuestro sitio web?</h2>
+                        <span>Completá el siguiente formulario para enviarnos todos tus comentarios.</span>
+                    </div>
+                </section>
+
+
+                <div class="container p-4">
+                    <form accept-charset="UTF-8">
+                        <div>
+                            <label for="">Tu apellido completo<span title="Este campo es obligatorio.">*</span></label>
+                            <input class="form-control" required="" placeholder="Extensión máxima: 60 caracteres" type="text" id="" name="" value="" size="60" maxlength="128" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;">
+                        </div>
+                            
+                        <div>
+                            <label for="">Tu nombre completo<span title="Este campo es obligatorio.">*</span></label>
+                            <input class="form-control" required="" placeholder="Extensión máxima: 60 caracteres" type="text" id="" name="" value="" size="60" maxlength="128">
+                        </div>
+                            
+                        <div>
+                            <label for="">Escribí tu número de CUIL<span title="Este campo es obligatorio.">*</span></label>
+                            <input class="form-control" required="" placeholder="Solo números, sin guiones ni espacios" type="text" id="" name="" value="" size="60" maxlength="128">
+                        </div>
+
+                        <div>
+                            <label for="">Tu correo electrónico <span title="Este campo es obligatorio.">*</span></label>
+                            <input class="form-control" placeholder="micorreo@ejemplo.com" required="required" type="email" id="" name="" size="60">
+                        </div>
                         
                     <section class="container p-4">
                         <div>
-                            <h2>¿Querés comentarnos algo para mejorar nuestro sitio web?</h2>
-                            <span>Completá el siguiente formulario para enviarnos todos tus comentarios.</span>
+                            <label for="">¿Por cuál motivo nos escribís? <span title="Este campo es obligatorio.">*</span></label>
+                            <select class="form-control" id="" name="">
+                                <option value="" selected="selected">- Seleccionar -</option>
+                                <option value="1">Quiero sugerirles algo para mejorar su sitio web</option>
+                                <option value="2">No encontré o no entendí la información</option>
+                                <option value="3">Hay información errónea o desactualizada</option>
+                                <option value="4">Quiero reportar una falla técnica</option>
+                            </select>
                         </div>
-                    </section>
-                                            
-                        <div class="container p-4">
-                            <form accept-charset="UTF-8">
-                                <div>
-                                    <label for="">Tu apellido completo<span title="Este campo es obligatorio.">*</span></label>
-                                    <input class="form-control" required placeholder="Extensión máxima: 60 caracteres" type="text" id="" name="" value="" size="60" maxlength="128">
-                                </div>
-                                    
-                                <div>
-                                    <label for="">Tu nombre completo<span title="Este campo es obligatorio.">*</span></label>
-                                    <input class="form-control" required placeholder="Extensión máxima: 60 caracteres" type="text" id="" name="" value="" size="60" maxlength="128">
-                                </div>
-                                    
-                                <div>
-                                    <label for="">Escribí tu número de CUIL<span title="Este campo es obligatorio.">*</span></label>
-                                    <input class="form-control" required placeholder="Solo números, sin guiones ni espacios" type="text" id="" name="" value="" size="60" maxlength="128">
-                                </div>
-
-                                <div>
-                                    <label for="">Tu correo electrónico <span title="Este campo es obligatorio.">*</span></label>
-                                    <input class="form-control" placeholder="micorreo@ejemplo.com" required="required" type="email" id="" name="" size="60">
-                                </div>
-                                
-                                <div>
-                                    <label for="">¿Por cuál motivo nos escribís? <span title="Este campo es obligatorio.">*</span></label>
-                                    <select class="form-control" id="" name="">
-                                        <option value="" selected="selected">- Seleccionar -</option>
-                                        <option value="1">Quiero sugerirles algo para mejorar su sitio web</option>
-                                        <option value="2">No encontré o no entendí la información</option>
-                                        <option value="3">Hay información errónea o desactualizada</option>
-                                        <option value="4">Quiero reportar una falla técnica</option>
-                                    </select>
-                                </div>
-                
-                                <div>
-                                    <label for="">Tu comentario <span title="Este campo es obligatorio.">*</span></label>
-                                    <div>
-                                        <textarea class="form-control" placeholder="Contanos cómo podemos mejorar." id="" name=""></textarea>
-                                    </div>
-                                </div>
-                            </form>
+        
+                        <div>
+                            <label for="">Tu comentario <span title="Este campo es obligatorio.">*</span></label>
                             <div>
-                                <button class="btn btn-primary" type="submit" name="" value="Enviar mi comentario">Enviar mi sugerencia</button>
+                                <textarea class="form-control" placeholder="Contanos cómo podemos mejorar." id="" name=""></textarea>
                             </div>
                         </div>
-                </section>
+                    </form>
+                    <div>
+                        <button class="btn btn-primary" type="submit" name="" value="Enviar mi comentario">Enviar mi sugerencia</button>
+                    </div>
+                </div>
             </main>
 
- <!--Inicio Footer-->
-            <footer class="text-lg-start bg-light text-muted">
+<!--Inicio Footer-->
+            <footer class="text-lg-start fondo-rosado text-muted">
+                <!-- Redes Sociales -->
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="social">
+                            <a href="https://www.facebook.com/" target="_blank"><i class="ri-facebook-circle-line icon"></i></a>
+                            <a href="https://www.youtube.com/" target="_blank"> <i class="ri-youtube-line icon"></i></a>
+                            <a href="https://www.instagram.com/" target="_blank"><i class="ri-instagram-line icon" ></i></a>
+                        </div>
+                    </div>
+                </div>
                 <div class="container p-4">
                     <!-- Apartado para la suscripción -->
                     <section>
@@ -128,7 +120,7 @@
                                 <div class="col-auto"><p class="pt-2"><strong>Suscribite a nuestro boletín</strong></p></div>
                                 <div class="col-md-5 col-12">
                                     <div class="form-outline form-white mb-4">
-                                        <input type="email" class="form-control" placeholder="Ingresa tu correo">
+                                        <input type="email" class="form-control" placeholder="Ingresa tu correo" required>
                                     </div>
                                 </div>
                                 <div class="col-auto">
@@ -154,12 +146,12 @@
                                 <ul class="list-unstyled mb-0">
                                     <li><a href="./terminos_condiciones.html" class="footer-link">Términos y Condiciones</a></li>
                                     <li><a href="./politica_privacidad.html" class="footer-link">Política de Privacidad</a></li>
-                                    <li><a href="/pages/sugerencias.html" class="footer-link">Sugerencias</a></li>
+                                    <li><a href="./sugerencias.html" class="footer-link">Sugerencias</a></li>
                                 </ul>
                             </div>
                             <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
                                 <h6 class="text-uppercase">Nosotros</h6>
-                                <ul class="list-unstyled mb-0">
+                                <ul class="list-unstyled mb-0 text-pink">
                                     <li><span>San Juan, Argentina</span></li>
                                     <li><span>(+54) 0331 444123564</span></li>
                                     <li><span>contacto@juzgadodefaltas.com.ar</span></li>
@@ -169,12 +161,12 @@
                     </section>
                 </div>
 
-                <div class="text-center p-3 ro-top-bar" >© 2022 Copyright:
-                    <a href="https://github.com/maraushuaia" target="_blank">Rodrigo Muñoz</a>
+                <div class="text-center p-3 copyright" >© 2022 Copyright:
+                    <a class="text-white" href="https://github.com/maraushuaia" target="_blank">Rodrigo Muñoz</a>
                 </div>
             </footer>
 
-            <script src="/js/bootstrap.bundle.min.js"></script>
+            <script src="../js/bootstrap.bundle.min.js"></script>
 
     </body>
 </html>
