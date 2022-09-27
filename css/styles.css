@@ -305,25 +305,11 @@
 
 
 
-.ro-carousel-caption {
-    position: absolute;
-    right: 15%;
-    bottom: 1.25rem;
-    left: 15%;
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-    color: #030303;
-    text-align: center;
-}
-
-
-
-
 /*Seccion de noticias*/
                         
 .popular-post{
     background:#eca3c80c;    
-    border: solid 1px #c52b78;;
+    border: solid 1px #ceadbe;;
     border-radius: 1%;
 }
 

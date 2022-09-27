@@ -59,49 +59,75 @@
                     </div>
 
                 </section>
- 
-                <section class="container p-4">
-                    <form class="row g-3">
-                        <div class="col-md-6">
-                            <label for="inputAddress" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" required>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="inputAddress" class="form-label">Apellido</label>
-                            <input type="text" class="form-control required">
-                        </div>
-                        <div class="col-md-6">
-                            <label for="inputAddress" class="form-label">Nro. de CUIL</label>
-                            <input type="text" class="form-control required">
-                        </div>
-                        <div class="col-md-6">
-                            <label for="inputAddress" class="form-label">Nro. de Teléfono</label>
-                            <input type="text" class="form-control required">
-                        </div>
-                        <div class="col-md-12">
-                            <label for="inputAddress" class="form-label">Direccion</label>
-                            <input type="text" class="form-control">
-                        </div>
-                        <div class="col-md-12">
-                          <label for="inputEmail4" class="form-label">Email</label>
-                          <input type="email" class="form-control" id="inputEmail4">
-                        </div>
-                        <div class="col-md-12">
-                            <label for="inputAddress" class="form-label">Consulta</label>
-                            <textarea class="form-control" rows="10" placeholder="Ingresa tu consulta" required></textarea>
-                        </div>
-                        <div class="col-12">
-                          <button type="submit" class="btn btn-primary">Enviar</button>
-                        </div>
-                    </form>
-                </section>
-                
-                <section>
-                    <div>
-                        <!--Podría ir un mapa de ubicación-->        
-                    </div>
-                </section>
 
+                <div class="container">
+                    <div class="contact__wrapper shadow-lg mt-n9 mb-5">
+                        <div class="row no-gutters">
+                            <div class="fondo-rosado col-lg-5 contact-info__wrapper gradient-brand-color p-5 order-lg-2">
+                                <h3 class="color--white mb-5">Nosotros</h3>
+                    
+                                <ul class="list-unstyled">
+                                    <li class="mb-4 pl-4">
+                                        <span><i class="fas fa-envelope"></i></span> contacto@juzgadodefaltas.com.ar
+                                    </li>
+                                    <li class="mb-4 pl-4">
+                                        <span><i class="fas fa-phone"></i></span> (+54) 011 - 4444 1234
+                                    </li>
+                                    <li class="mb-4 pl-4">
+                                        <span class="position-absolute"><i class="fas fa-map-marker-alt"></i></span> San Juan, Argentina
+                                    </li>
+                                </ul>
+                            </div>
+                    
+                            <div class="col-lg-7 contact-form__wrapper p-5 order-lg-1">
+                                <form action="#" class="contact-form form-validate" novalidate="novalidate">
+                                    <div class="row">
+                                        <div class="col-sm-6 mb-3">
+                                            <div class="form-group">
+                                                <label class="required-field" for="firstName">Nombre</label>
+                                                <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Nombre">
+                                            </div>
+                                        </div>
+                    
+                                        <div class="col-sm-6 mb-3">
+                                            <div class="form-group">
+                                                <label for="lastName">Apellido</label>
+                                                <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Apellido">
+                                            </div>
+                                        </div>
+                    
+                                        <div class="col-sm-6 mb-3">
+                                            <div class="form-group">
+                                                <label class="required-field" for="email">Email</label>
+                                                <input type="text" class="form-control" id="email" name="email" placeholder="correo@ejemplo.com">
+                                            </div>
+                                        </div>
+                    
+                                        <div class="col-sm-6 mb-3">
+                                            <div class="form-group">
+                                                <label for="phone">Telefono</label>
+                                                <input type="tel" class="form-control" id="phone" name="phone" placeholder="+5492901501234">
+                                            </div>
+                                        </div>
+                    
+                                        <div class="col-sm-12 mb-3">
+                                            <div class="form-group">
+                                                <label class="required-field" for="message">Consulta</label>
+                                                <textarea class="form-control" id="message" name="message" rows="4" placeholder="Detallanos lo mejor posible tu consulta."></textarea>
+                                            </div>
+                                        </div>
+                    
+                                        <div class="col-sm-12 mb-3 text-end">
+                                            <button type="submit" name="submit" class="btn btn-primary">Enviar</button>
+                                        </div>
+                    
+                                    </div>
+                                </form>
+                            </div>
+                    
+                        </div>
+                    </div>
+                </div>
             </main>
 
  <!--Inicio Footer-->
