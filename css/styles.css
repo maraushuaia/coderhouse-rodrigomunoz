@@ -322,7 +322,9 @@
 /*Seccion de noticias*/
                         
 .popular-post{
-    background:#DDDDDD;    
+    background:#eca3c80c;    
+    border: solid 1px #c52b78;;
+    border-radius: 1%;
 }
 
 .line-item  {
