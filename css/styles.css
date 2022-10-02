@@ -37,6 +37,11 @@
     background-color: #c52b780c;
 }
 
+/*Color ROSADO*/
+.fondo-negro{
+    background-color: #03030373;
+}
+
 .ro-header-pages{
     width: 100%;
     height: 5rem;
@@ -67,10 +72,10 @@
     bottom: 3rem;
     z-index: 10;
 }
-  
+
 /* Declare heights because of positioning of img element */
 .carousel-item {
-    height: 32rem;
+    height: 42rem;
 }
 
 
@@ -85,7 +90,7 @@
 
 .text-pink{
     color: #c52b78;
-    
+
 }
 
 .accordion-button {
@@ -104,6 +109,11 @@
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
 }
 
+.accordion-button:not(.collapsed) {
+    color: #c52b78;
+    background-color: #c52b780c;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+  }
 
 
 
@@ -191,7 +201,8 @@
 
 /*Animación ZOOM fotos Noticias Home*/
 .zoom:hover{
-    transform : scale(.95);
+    /* transform : scale(.95); */
+    transform : scale(.92);
 }
 
 .ufa-text{
@@ -239,7 +250,7 @@
   .btn-check:focus + .btn-primary, .btn-primary:focus {
     color: #fff;
     background-color: #462a7a;
-    border-color: #0a58ca; 
+    border-color: #0a58ca;
     box-shadow: 0 0 0 0.25rem #3184fd80;
   }
   .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
@@ -264,7 +275,7 @@
 
 .ro-float-left {
     float:left;
-} 
+}
 
 /*Barra superior de ACCESO*/
 
@@ -278,7 +289,6 @@
 /*Configuraciones del Footer y animaciones*/
 .footer-link {
     display: block;
-    /* color: #0d6efd; */
     color: #c52b78;
     text-decoration: none;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
@@ -292,7 +302,6 @@
 }
 
 .footer-link:hover, .footer-link:focus {
-    /* color: #0a58ca; */
     color: #462a7a;
 }
 
@@ -306,24 +315,24 @@
 
 
 /*Seccion de noticias*/
-                        
+
 .popular-post{
-    background:#eca3c80c;    
+    background:#eca3c80c;
     border: solid 1px #ceadbe;;
     border-radius: 1%;
 }
 
 .line-item  {
     background: url("https://bootdey.com/img/Content/border-top-dotted.gif") repeat-x scroll left top rgba(0, 0, 0, 0);
-    margin: 0 0 0 30px;
-    padding: 25px 0 15px;
+    margin: 0 0 0 .5rem;
+    padding: 25px 0 25px;
 }
 
 .content-image {
-    float: right;
     margin-bottom: 10px;
-    margin-left: 25px;
     margin-top: 5px;
+    display: flex;
+    justify-content: center;
 }
 
 .post-title {
@@ -372,4 +381,5 @@
     line-height: 16px;
     max-height: 64px;
     overflow: hidden;
-}                    
+}
+
