@@ -31,7 +31,6 @@
 
 /*Color Sección MENU PRINCIPAL*/
 .ro-nav{
-    /* background-image:linear-gradient(to right,#6f42c1 0,#6f42c1 60%,#c52b78 100%); */
     background-color: #6f42c1;
 }
 
@@ -60,9 +59,7 @@
     height: 5rem;
     background:linear-gradient(to right,rgba(0, 0, 0, 0.514),rgba(0, 0, 0, 0.514)), url("/image/header-page.webp");
     background-position: center;
-    /* object-fit: cover; */
 }
-
 
 /*Defino Propiedades del Encabezado de Paginas*/
 .encabezado-pagina{
@@ -90,7 +87,6 @@
 .carousel-item {
     height: 42rem;
 }
-
 
 .carousel-item > img {
     position: absolute;
@@ -203,7 +199,6 @@
 
 /*Animación ZOOM fotos Noticias Home*/
 .zoom:hover{
-    /* transform : scale(.95); */
     transform : scale(.92);
 }
 
@@ -224,10 +219,6 @@
     background-color: #030303;
     color: white;
 }
-
-
-
-
 
 /*---*/
 /* Construyo modificaciones de algunos elementos de Bootstrap*/
@@ -269,8 +260,6 @@
     border-color: #0d6efd;
   }
 
-
-
 .ro-float-right {
     float:right;
 }
@@ -279,14 +268,10 @@
     float:left;
 }
 
-/*Barra superior de ACCESO*/
-
 .navbar-collapse{
     flex-basis: 100%;
     flex-grow: 0;
 }
-
-
 
 /*Configuraciones del Footer y animaciones*/
 .footer-link {
@@ -294,8 +279,7 @@
     color: #c52b78;
     text-decoration: none;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
-  }
-
+}
 
 @media (prefers-reduced-motion: reduce) {
     .footer-link {
@@ -313,11 +297,7 @@
     cursor: default;
 }
 
-
-
-
 /*Seccion de noticias*/
-
 .popular-post{
     background:#eca3c80c;
     border: solid 1px #ceadbe;;
