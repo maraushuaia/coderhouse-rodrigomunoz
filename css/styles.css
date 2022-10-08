@@ -51,15 +51,15 @@
 
 /*Color NEGRO*/
 .fondo-negro{
-    background-color: #03030373;
+    background-color: #0303039c;
 }
 
-.ro-header-pages{
+/* .ro-header-pages{
     width: 100%;
     height: 5rem;
     background:linear-gradient(to right,rgba(0, 0, 0, 0.514),rgba(0, 0, 0, 0.514)), url("/image/header-page.webp");
     background-position: center;
-}
+} */
 
 /*Defino Propiedades del Encabezado de Paginas*/
 .encabezado-pagina{
@@ -72,20 +72,24 @@
     color: #6f42c1;
 }
 
-/* Carousel base class */
-.carousel-home {
-    margin-bottom: 4rem;
+
+/* Datos del Carrusel */
+
+.cover{
+    object-fit: cover;
 }
 
-/* Since positioning the image, we need to help out the caption */
+.filtro{
+    filter: brightness(60%);
+}
+
 .carousel-caption {
     bottom: 3rem;
     z-index: 10;
 }
 
-/* Declare heights because of positioning of img element */
 .carousel-item {
-    height: 42rem;
+    height: 45rem;
 }
 
 .carousel-item > img {
@@ -93,7 +97,7 @@
     top: 0;
     left: 0;
     min-width: 100%;
-    height: 32rem;
+    height: 45rem;
 }
 
 .text-pink{
@@ -168,6 +172,7 @@
     justify-items: center
 }
 
+/*Uso esta clase en Institucional - Contactanos*/
 .ro-img {
     display: block;
     margin: 0 auto;
@@ -178,8 +183,9 @@
     margin-left: 1rem;
     margin-right: 1rem;
     margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-bottom: 6rem;
 }
+
 .home-news{
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -364,3 +370,4 @@
     max-height: 64px;
     overflow: hidden;
 }
+
