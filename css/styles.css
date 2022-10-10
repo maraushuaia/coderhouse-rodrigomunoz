@@ -11,21 +11,64 @@
 .form-rosado {
   background-color: #eca3c80c; }
 
-/*GLOBAL - Fondo color ROSADO / VIOLETA LIGHT / NEGRO LIGHT*/
+/*GLOBAL - Fondo color ROSADO / VIOLETA LIGHT*/
 .fondo-rosado {
   background-color: #c52b780c; }
 
 .fondo-violeta {
   background-color: #6e42c136; }
 
-.fondo-negro {
-  background-color: #0303039c; }
-
 /*GLOBAL - Adecuo el ancho de las imagenes (Institucional - Contactanos)*/
 .ro-img {
   display: block;
   margin: 0 auto;
   max-width: 100%; }
+
+/*GLOBAL - inZoom para imagenes*/
+.zoom {
+  transition: width 2s, height 2s, transform 1s; }
+  .zoom:hover {
+    transform: scale(0.92); }
+
+/*GLOBAL - Define color y transion del ACORDEON*/
+.accordion-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 1.25rem;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+  border: 0;
+  border-radius: 0;
+  overflow-anchor: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease; }
+  .accordion-button:not(.collapsed) {
+    color: #c52b78;
+    background-color: #c52b780c;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125); }
+
+/*GLOBAL - Botones*/
+.ro-btn-light {
+  background-color: #00B49B;
+  border-color: #00B49B;
+  color: white; }
+
+.btn-primary {
+  color: #fff;
+  background-color: #6f42c1;
+  border-color: #6f42c1; }
+  .btn-primary:hover {
+    color: #fff;
+    background-color: #462a7a;
+    border-color: #462a7a; }
+  .btn-primary:focus {
+    color: #fff;
+    background-color: #462a7a;
+    border-color: #0a58ca;
+    box-shadow: 0 0 0 0.25rem #3184fd80; }
 
 /*NAV - De todas las páginas*/
 header .ro-nav {
@@ -102,32 +145,6 @@ footer .copyright {
       bottom: 3rem;
       z-index: 10; }
 
-/*GLOBAL - Define color botones del ACORDION*/
-.accordion-button {
-  position: relative;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  padding: 1rem 1.25rem;
-  font-size: 1rem;
-  color: #212529;
-  text-align: left;
-  background-color: #fff;
-  border: 0;
-  border-radius: 0;
-  overflow-anchor: none;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease; }
-  .accordion-button:not(.collapsed) {
-    color: #c52b78;
-    background-color: #c52b780c;
-    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125); }
-
-/*GLOBAL - Zoom para imagenes*/
-.zoom {
-  transition: width 2s, height 2s, transform 1s; }
-  .zoom:hover {
-    transform: scale(0.92); }
-
 /*INICIO - Sección noticias*/
 main .encabezado-pagina {
   width: 100%;
@@ -154,26 +171,6 @@ main .home-ufa {
   background-color: #67adee7e;
   padding-top: 5rem;
   padding-bottom: 5rem; }
-
-/*GLOBAL - Botones*/
-.ro-btn-light {
-  background-color: #00B49B;
-  border-color: #00B49B;
-  color: white; }
-
-.btn-primary {
-  color: #fff;
-  background-color: #6f42c1;
-  border-color: #6f42c1; }
-  .btn-primary:hover {
-    color: #fff;
-    background-color: #462a7a;
-    border-color: #462a7a; }
-  .btn-primary:focus {
-    color: #fff;
-    background-color: #462a7a;
-    border-color: #0a58ca;
-    box-shadow: 0 0 0 0.25rem #3184fd80; }
 
 /*NOTICIAS - Sección Noticias más leidas*/
 section .popular-post {
