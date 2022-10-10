@@ -167,11 +167,6 @@ main .home-news {
   color: #030303;
   align-items: center; }
 
-main .home-ufa {
-  background-color: #67adee7e;
-  padding-top: 5rem;
-  padding-bottom: 5rem; }
-
 /*NOTICIAS - Sección Noticias más leidas*/
 section .popular-post {
   background: #eca3c80c;
