@@ -1,18 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,300&display=swap');
+@import "variables.scss";
+
 
 *{
-    font-family: 'Roboto', sans-serif;
+    font-family: $tipografia-general;
 }
 
 /*GLOBAL - Color rosado*/
-.text-pink{color: #c52b78;}
+.text-pink{
+    color: $color-pink;
+}
 
 /*GLOBAL - FORMULARIOS de color ROSADO*/
-.form-rosado{background-color: #eca3c80c;}
+.form-rosado{background-color: $fondo-rosado;}
 
 /*GLOBAL - Fondo color ROSADO / VIOLETA LIGHT*/
-.fondo-rosado{background-color: #c52b780c;}
-.fondo-violeta{background-color: #6e42c136;}
+.fondo-rosado{background-color: $fondo-rosado;}
+.fondo-violeta{background-color: $fondo-violeta;}
 
 /*GLOBAL - Adecuo el ancho de las imagenes (Institucional - Contactanos)*/
 .ro-img {
@@ -39,14 +43,14 @@
     font-size: 1rem;
     color: #212529;
     text-align: left;
-    background-color: #fff;
+    background-color: $fondo-blanco;
     border: 0;
     border-radius: 0;
     overflow-anchor: none;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
     &:not(.collapsed){
-        color: #c52b78;
-        background-color: #c52b780c;
+        color: $color-pink;
+        background-color: $fondo-rosado;
          box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
     }
 }
@@ -55,20 +59,20 @@
 .ro-btn-light{
     background-color: #00B49B;
     border-color: #00B49B;
-    color: white;
+    color: $color-text-w;
 }
 
 .btn-primary {
-    color: #fff;
+    color: $color-text-w;
     background-color: #6f42c1;
     border-color: #6f42c1;
     &:hover {
-        color: #fff;
+        color: $color-text-w;
         background-color: #462a7a;
         border-color: #462a7a;
       }
       &:focus {
-        color: #fff;
+        color: $color-text-w;
         background-color: #462a7a;
         border-color: #0a58ca;
         box-shadow: 0 0 0 0.25rem #3184fd80;
@@ -114,10 +118,10 @@ footer{
             cursor:pointer;
             text-decoration: none;
             border-radius: 2rem;
-            background:#fff;
+            background:$fondo-blanco;
             margin:10px;
             transition: 0.4s;
-            color: #c52b78;
+            color: $color-pink;
             &:hover{
                 transform:translateY(-10px);
                 color: var(--color);
@@ -134,7 +138,7 @@ footer{
     }
     .footer-link {
         display: block;
-        color: #c52b78;
+        color: $color-pink;
         text-decoration: none;
         transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
         &:hover{
@@ -143,7 +147,7 @@ footer{
     }
     .copyright{
         background-color: #6f42c1;
-        color: white;
+        color: $color-text-w;
     }
 }
 
@@ -174,7 +178,7 @@ main{
     .encabezado-pagina{
         width: 100%;
         height: 15rem;
-        background-color: #c52b780c;
+        background-color: $fondo-rosado;
         display: flex;
         align-items: center;
         justify-content: center;

@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,300&display=swap");
 * {
-  font-family: 'Roboto', sans-serif; }
+  font-family: "Roboto", sans-serif; }
 
 /*GLOBAL - Color rosado*/
 .text-pink {
@@ -9,7 +9,7 @@
 
 /*GLOBAL - FORMULARIOS de color ROSADO*/
 .form-rosado {
-  background-color: #eca3c80c; }
+  background-color: #c52b780c; }
 
 /*GLOBAL - Fondo color ROSADO / VIOLETA LIGHT*/
 .fondo-rosado {
@@ -54,7 +54,7 @@
 .ro-btn-light {
   background-color: #00B49B;
   border-color: #00B49B;
-  color: white; }
+  color: #fff; }
 
 .btn-primary {
   color: #fff;
@@ -126,7 +126,7 @@ footer .footer-link {
 
 footer .copyright {
   background-color: #6f42c1;
-  color: white; }
+  color: #fff; }
 
 /*INICIO - CARRUSEL*/
 .carousel-item {
