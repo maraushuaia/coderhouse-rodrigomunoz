@@ -10,7 +10,7 @@ header{
             flex-basis: auto;
             flex-grow: 0;
             .font-menu{
-                font-size: $font-menu;
+                font-size: map-get($font, font-menu);
                 justify-content: end;
             }
         }

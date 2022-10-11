@@ -22,7 +22,7 @@ section{
             }
             .article-summary {
                 color: $color-text-g;
-                font-size: $font85;
+                font-size: map-get($font, 85);
                 line-height: 16px;
                 max-height: 64px;
                 overflow: hidden;
@@ -43,7 +43,7 @@ article{
         margin-bottom: 7px;
         margin-top: 3px;
         a{
-            font-size: $font65;
+            font-size: map-get($font, 65);
             line-height: 20px;
         }
     }
@@ -52,5 +52,36 @@ article{
         font-size: $font90;
         line-height: 18px;
         margin-bottom: 8px;
+    }
+}
+
+@media (max-width: 576px) {
+    section{
+        .popular-post{
+            .article-info {
+                .article-title {
+                    a{
+                        font-size: map-get($font, 90);
+                    }
+                }
+                .article-summary {
+                    font-size: map-get($font, 90);
+                }
+            }
+        }
+    }
+    article{
+     .post-title {
+        a{
+            font-size: map-get($font, 90);
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        }
+        .summary {
+            font-size: $font90;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
     }
 }
