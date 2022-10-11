@@ -1,0 +1,21 @@
+/*GLOBAL - Define color y transion del ACORDEON*/
+.accordion-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 1.25rem;
+    font-size: $font60;
+    color: #212529;
+    text-align: left;
+    background-color: $fondo-blanco;
+    border: 0;
+    border-radius: 0;
+    overflow-anchor: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
+    &:not(.collapsed){
+        color: $color-pink;
+        background-color: $fondo-rosado;
+         box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+    }
+}

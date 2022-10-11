@@ -1,0 +1,56 @@
+/*NOTICIAS - Sección Noticias más leidas*/
+section{
+    .popular-post{
+        background:$fondo-rosa-light;
+        border: solid 1px $color-rosa-light;
+        border-radius: 1%;
+        .teaser {
+            margin-bottom: 32px;
+            margin-top: 19px;
+            text-align: center;
+        }
+        .article-info {
+            padding: 0 29px;
+            .article-title {
+                margin-bottom: 7px;
+                margin-top: 3px;
+                a{
+                    font-size: $font65;
+                    font-weight: normal;
+                    line-height: 20px;
+                }
+            }
+            .article-summary {
+                color: $color-text-g;
+                font-size: $font85;
+                line-height: 16px;
+                max-height: 64px;
+                overflow: hidden;
+            }
+        }
+    }
+}
+
+/*NOTICIAS - Segunda Columna de noticias*/
+article{
+    .content-image {
+        margin-bottom: 10px;
+        margin-top: 5px;
+        display: flex;
+        justify-content: center;
+    }    
+    .post-title {
+        margin-bottom: 7px;
+        margin-top: 3px;
+        a{
+            font-size: $font65;
+            line-height: 20px;
+        }
+    }
+    .summary {
+        color: $color-text-g;
+        font-size: $font90;
+        line-height: 18px;
+        margin-bottom: 8px;
+    }
+}

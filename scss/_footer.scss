@@ -1,0 +1,51 @@
+/*FOOTER - Copyright y Redes Sociales*/
+footer{
+    .social{
+        width:15rem;
+        width:11rem;
+        display:flex;
+        padding: 10px;
+        border-radius:10px;
+        a{
+            width:25%;
+            font-size: $font60;
+            box-shadow: $color-celeste-light 3px 3px 6px 0px, $color-blanco -3px -3px 6px 1px;
+            height:2rem;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            cursor:pointer;
+            text-decoration: none;
+            border-radius: 2rem;
+            background:$fondo-blanco;
+            margin:10px;
+            transition: 0.4s;
+            color: $color-pink;
+            &:hover{
+                transform:translateY(-10px);
+                color: var(--color);
+            }
+            @keyframes sTransition {
+                0% {
+                    background-position: 0%;
+                }
+                100% {
+                    background-position: 400%;
+                }
+            }
+        }
+    }
+    .footer-link {
+        display: block;
+        color: $color-pink;
+        text-decoration: none;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+        &:hover{
+            color: $color-primary;
+        }
+    }
+    .copyright{
+        background-color: $color-nav;
+        color: $color-text-w;
+    }
+}

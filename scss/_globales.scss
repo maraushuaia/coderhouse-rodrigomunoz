@@ -1,0 +1,67 @@
+// mapa
+// Color rosado
+// Formularios
+// Fondo Rosado
+// Fondo Violeta
+// Seteo de Imagenes
+// Zoom (en este caso es in)
+// Botones
+//
+//
+
+
+
+*{
+    font-family: $tipografia-general;
+}
+
+/*GLOBAL - Color rosado*/
+.text-pink{
+    color: $color-pink;
+}
+
+/*GLOBAL - FORMULARIOS de color ROSADO*/
+.form-rosado{background-color: $fondo-rosado;}
+
+/*GLOBAL - Fondo color ROSADO / VIOLETA LIGHT*/
+.fondo-rosado{background-color: $fondo-rosado;}
+.fondo-violeta{background-color: $fondo-violeta;}
+
+/*GLOBAL - Adecuo el ancho de las imagenes (Institucional - Contactanos)*/
+.ro-img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+/*GLOBAL - inZoom para imagenes*/
+.zoom{
+    transition: width 2s, height 2s, transform 1s;
+    &:hover{
+        transform : scale(.92);
+    }
+}
+
+/*GLOBAL - Botones*/
+.ro-btn-light{
+    background-color: $color-verde;
+    border-color: $color-verde;
+    color: $color-text-w;
+}
+
+.btn-primary {
+    color: $color-text-w;
+    background-color:$color-violeta;
+    border-color:$color-violeta;
+    &:hover {
+        color: $color-text-w;
+        background-color: $color-primary;
+        border-color: $color-primary;
+      }
+      &:focus {
+        color: $color-text-w;
+        background-color: $color-primary;
+        border-color: $color-azul-1;
+        box-shadow: 0 0 0 0.25rem $color-azul-2;
+      }
+  }

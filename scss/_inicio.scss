@@ -1,0 +1,24 @@
+/*INICIO - Sección NOTICIAS*/
+main{
+    .encabezado-pagina{
+        width: 100%;
+        height: 15rem;
+        background-color: $fondo-rosado;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $color-violeta;
+}
+    .home-news-container{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: 3rem;
+        margin-bottom: 6rem;
+    }
+    .home-news{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        color: $color-text-b;
+        align-items: center;
+    }
+}

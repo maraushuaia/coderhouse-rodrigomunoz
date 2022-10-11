@@ -1,0 +1,18 @@
+header{
+    .ro-nav{
+        background-color: $color-nav;
+        align-items: flex-end;
+        .logo{
+            width: 42px;
+            height: 42px;
+        }
+        .navbar-collapse{
+            flex-basis: auto;
+            flex-grow: 0;
+            .font-menu{
+                font-size: $font-menu;
+                justify-content: end;
+            }
+        }
+    }
+}
