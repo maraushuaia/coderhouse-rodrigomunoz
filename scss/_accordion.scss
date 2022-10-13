@@ -8,14 +8,14 @@
     font-size: map-get($font, 60);
     color: #212529;
     text-align: left;
-    background-color: $fondo-blanco;
+    background-color: map-get($color, white100);
     border: 0;
     border-radius: 0;
     overflow-anchor: none;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
     &:not(.collapsed){
-        color: $color-pink;
-        background-color: $fondo-rosado;
+        color: map-get($color, theme-secondary);
+        background-color: map-get($color, theme-secondary-superlight);
          box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
     }
 }

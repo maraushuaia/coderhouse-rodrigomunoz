@@ -3,11 +3,11 @@ main{
     .encabezado-pagina{
         width: 100%;
         height: 15rem;
-        background-color: $fondo-rosado;
+        background-color: map-get($color, theme-secondary-superlight);
         display: flex;
         align-items: center;
         justify-content: center;
-        color: $color-violeta;
+        color: map-get($color, theme-primary);
 }
     .home-news-container{
         margin-left: 1rem;
@@ -18,7 +18,7 @@ main{
     .home-news{
         padding-top: 3rem;
         padding-bottom: 3rem;
-        color: $color-text-b;
+        color: map-get($color, white100);
         align-items: center;
     }
 }

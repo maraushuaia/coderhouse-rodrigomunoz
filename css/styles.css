@@ -4,12 +4,8 @@
   font-family: "Roboto", sans-serif; }
 
 /*GLOBAL - Color rosado*/
-.text-pink {
+.text-color-secondary {
   color: #c52b78; }
-
-/*GLOBAL - FORMULARIOS de color ROSADO*/
-.form-rosado {
-  background-color: #c52b780c; }
 
 /*GLOBAL - Fondo color ROSADO / VIOLETA LIGHT*/
 .fondo-rosado {
@@ -34,20 +30,19 @@
 .ro-btn-light {
   background-color: #00B49B;
   border-color: #00B49B;
-  color: #fff; }
+  color: #ffffff; }
 
 .btn-primary {
-  color: #fff;
+  color: #ffffff;
   background-color: #6f42c1;
   border-color: #6f42c1; }
   .btn-primary:hover {
-    color: #fff;
+    color: #ffffff;
     background-color: #462a7a;
-    border-color: #462a7a; }
+    border-color: #6f42c1; }
   .btn-primary:focus {
-    color: #fff;
-    background-color: #462a7a;
-    border-color: #0a58ca;
+    background-color: #6f42c1;
+    border-color: #3184fd80;
     box-shadow: 0 0 0 0.25rem #3184fd80; }
 
 header .ro-nav {
@@ -73,7 +68,7 @@ footer .social {
   footer .social a {
     width: 25%;
     font-size: 0.6em;
-    box-shadow: #ccdbe8 3px 3px 6px 0px, #fff -3px -3px 6px 1px;
+    box-shadow: #ccdbe8 3px 3px 6px 0px, #ffffff -3px -3px 6px 1px;
     height: 2rem;
     display: flex;
     justify-content: center;
@@ -81,7 +76,7 @@ footer .social {
     cursor: pointer;
     text-decoration: none;
     border-radius: 2rem;
-    background: #fff;
+    background: #ffffff;
     margin: 10px;
     transition: 0.4s;
     color: #c52b78; }
@@ -105,11 +100,11 @@ footer .footer-link {
 
 footer .copyright {
   background-color: #6f42c1;
-  color: #fff; }
+  color: #ffffff; }
 
 /*NOTICIAS - Sección Noticias más leidas*/
 section .popular-post {
-  background: #eca3c80c;
+  background: #c52b780c;
   border: solid 1px #ceadbe;
   border-radius: 1%; }
   section .popular-post .teaser {
@@ -176,7 +171,7 @@ article .summary {
   font-size: 0.6em;
   color: #212529;
   text-align: left;
-  background-color: #fff;
+  background-color: #ffffff;
   border: 0;
   border-radius: 0;
   overflow-anchor: none;
@@ -226,5 +221,5 @@ main .home-news-container {
 main .home-news {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  color: #030303;
+  color: #ffffff;
   align-items: center; }

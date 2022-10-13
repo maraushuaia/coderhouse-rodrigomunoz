@@ -1,6 +1,5 @@
 // mapa
 // Color rosado
-// Formularios
 // Fondo Rosado
 // Fondo Violeta
 // Seteo de Imagenes
@@ -12,16 +11,13 @@
 }
 
 /*GLOBAL - Color rosado*/
-.text-pink{
-    color: $color-pink;
+.text-color-secondary{
+    color: map-get($color, theme-secondary);
 }
 
-/*GLOBAL - FORMULARIOS de color ROSADO*/
-.form-rosado{background-color: $fondo-rosado;}
-
 /*GLOBAL - Fondo color ROSADO / VIOLETA LIGHT*/
-.fondo-rosado{background-color: $fondo-rosado;}
-.fondo-violeta{background-color: $fondo-violeta;}
+.fondo-rosado{background-color: map-get($color, theme-secondary-superlight);}
+.fondo-violeta{background-color: map-get($color, theme-primary-light);}
 
 /*GLOBAL - Adecuo el ancho de las imagenes (Institucional - Contactanos)*/
 .ro-img {
@@ -40,24 +36,24 @@
 
 /*GLOBAL - Botones*/
 .ro-btn-light{
-    background-color: $color-verde;
-    border-color: $color-verde;
-    color: $color-text-w;
+    background-color: map-get($color, green100);
+    border-color: map-get($color, green100);
+    color: map-get($color, white100);
 }
 
 .btn-primary {
-    color: $color-text-w;
-    background-color:$color-violeta;
-    border-color:$color-violeta;
+    color: map-get($color, white100);
+    background-color: map-get($color, theme-primary);
+    border-color: map-get($color, theme-primary);
     &:hover {
-        color: $color-text-w;
-        background-color: $color-primary;
-        border-color: $color-primary;
+        color: map-get($color, white100);
+        background-color: map-get($color, theme-select);
+        border-color: map-get($color, theme-primary);
       }
       &:focus {
-        color: $color-text-w;
-        background-color: $color-primary;
-        border-color: $color-azul-1;
-        box-shadow: 0 0 0 0.25rem $color-azul-2;
+        color: map-get($color, blanco100);
+        background-color: map-get($color, theme-primary);
+        border-color: map-get($color, theme-primary-border);
+        box-shadow: 0 0 0 0.25rem map-get($color, theme-primary-border);
       }
   }

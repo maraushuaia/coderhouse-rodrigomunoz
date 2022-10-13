@@ -9,7 +9,7 @@ footer{
         a{
             width:25%;
             font-size: $font60;
-            box-shadow: $color-celeste-light 3px 3px 6px 0px, $color-blanco -3px -3px 6px 1px;
+            box-shadow: map-get($color, blue-light) 3px 3px 6px 0px, map-get($color, white100) -3px -3px 6px 1px;
             height:2rem;
             display:flex;
             justify-content:center;
@@ -17,10 +17,10 @@ footer{
             cursor:pointer;
             text-decoration: none;
             border-radius: 2rem;
-            background:$fondo-blanco;
+            background: map-get($color, white100);
             margin:10px;
             transition: 0.4s;
-            color: $color-pink;
+            color: map-get($color, theme-secondary);
             &:hover{
                 transform:translateY(-10px);
                 color: var(--color);
@@ -37,15 +37,15 @@ footer{
     }
     .footer-link {
         display: block;
-        color: $color-pink;
+        color: map-get($color, theme-secondary);
         text-decoration: none;
         transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
         &:hover{
-            color: $color-primary;
+            color: map-get($color, theme-select)
         }
     }
     .copyright{
-        background-color: $color-nav;
-        color: $color-text-w;
+        background-color: map-get($color, theme-primary);
+        color: map-get($color, white100);
     }
 }
