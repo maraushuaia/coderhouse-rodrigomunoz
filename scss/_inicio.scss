@@ -8,7 +8,7 @@ main{
         align-items: center;
         justify-content: center;
         color: map-get($color, theme-primary);
-}
+    }
     .home-news-container{
         margin-left: 1rem;
         margin-right: 1rem;
@@ -18,7 +18,7 @@ main{
     .home-news{
         padding-top: 3rem;
         padding-bottom: 3rem;
-        color: map-get($color, white100);
+        color: map-get($color, black100);
         align-items: center;
     }
 }
