@@ -1,6 +1,8 @@
 /*INICIO - CARRUSEL*/
 .carousel-item {
     height: 42rem;
+    font-size: map-get($font, 130);
+    
     .cover{
         object-fit: cover;
     }

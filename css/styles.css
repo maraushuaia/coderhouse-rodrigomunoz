@@ -26,6 +26,15 @@
   .zoom:hover {
     transform: scale(0.92); }
 
+/*GLOBAL - spinner*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+input[type=number] {
+  -moz-appearance: textfield; }
+
 /*GLOBAL - Botones*/
 .ro-btn-light {
   background-color: #00B49B;
@@ -187,7 +196,8 @@ article .summary {
 
 /*INICIO - CARRUSEL*/
 .carousel-item {
-  height: 42rem; }
+  height: 42rem;
+  font-size: 1.3em; }
   .carousel-item .cover {
     object-fit: cover; }
   .carousel-item .filtro {

@@ -7,6 +7,9 @@ $font65: .65em;
 $font70: .70em;
 $font85: .85em;
 $font90: .90em;
+$font110: 1.1em;
+$font120: 1.2em;
+$font130: 1.3em;
 $font140: 1.4em;
 $font-menu: 1.2em;
 
@@ -18,6 +21,9 @@ $font: (
     70: $font70,
     85: $font85,
     90: $font90,
+    110: $font110,
+    120: $font120,
+    130: $font130,
     140: $font140,
     font-menu: $font-menu,
 );
