@@ -111,6 +111,38 @@ footer .copyright {
   background-color: #6f42c1;
   color: #ffffff; }
 
+footer .nav-down {
+  display: none; }
+
+footer .copy-simple {
+  display: none; }
+
+/*Intento hacer un menu que aparecerá en vista movil al final de la página*/
+@media only screen and (min-width: 300px) and (max-width: 415px) {
+  footer .nav-down {
+    display: grid;
+    padding-top: 4rem; }
+    footer .nav-down .menu-option {
+      display: flex;
+      justify-content: space-evenly;
+      overflow: hidden;
+      position: fixed;
+      text-align: center;
+      bottom: 0;
+      width: 100vw;
+      background-color: #6f42c1;
+      padding-top: .7rem;
+      padding-bottom: .5rem; }
+      footer .nav-down .menu-option span {
+        display: block; }
+    footer .nav-down .icon-menu {
+      width: 30px;
+      height: 27px; }
+  footer .copyright {
+    display: none; }
+  footer .copy-simple {
+    display: grid; } }
+
 /*NOTICIAS - Sección Noticias más leidas*/
 section .popular-post {
   background: #c52b780c;
@@ -212,6 +244,12 @@ article .summary {
       bottom: 3rem;
       z-index: 10; }
 
+@media only screen and (min-width: 300px) and (max-width: 415px) {
+  .carousel-item {
+    height: 38rem; }
+    .carousel-item .img-car {
+      height: 38rem; } }
+
 /*INICIO - Sección NOTICIAS*/
 main .encabezado-pagina {
   width: 100%;
@@ -233,3 +271,7 @@ main .home-news {
   padding-bottom: 3rem;
   color: #030303;
   align-items: center; }
+
+@media only screen and (min-width: 300px) and (max-width: 415px) {
+  main .encabezado-pagina {
+    height: 8rem; } }
