@@ -57,7 +57,7 @@ footer{
 }
 
 /*Intento hacer un menu que aparecerá en vista movil al final de la página*/
-@media only screen and (min-width: 300px) and (max-width: 415px) {
+@media only screen and (min-width: 300px) and (max-width: 502px) {
     footer {
         .nav-down{
             display: grid;

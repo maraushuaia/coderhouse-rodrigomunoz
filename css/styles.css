@@ -118,7 +118,7 @@ footer .copy-simple {
   display: none; }
 
 /*Intento hacer un menu que aparecerá en vista movil al final de la página*/
-@media only screen and (min-width: 300px) and (max-width: 415px) {
+@media only screen and (min-width: 300px) and (max-width: 502px) {
   footer .nav-down {
     display: grid;
     padding-top: 4rem; }
@@ -244,7 +244,7 @@ article .summary {
       bottom: 3rem;
       z-index: 10; }
 
-@media only screen and (min-width: 300px) and (max-width: 415px) {
+@media only screen and (min-width: 300px) and (max-width: 502px) {
   .carousel-item {
     height: 38rem; }
     .carousel-item .img-car {
@@ -272,6 +272,6 @@ main .home-news {
   color: #030303;
   align-items: center; }
 
-@media only screen and (min-width: 300px) and (max-width: 415px) {
+@media only screen and (min-width: 300px) and (max-width: 502px) {
   main .encabezado-pagina {
     height: 8rem; } }
