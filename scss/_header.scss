@@ -12,7 +12,13 @@ header{
             .font-menu{
                 font-size: map-get($font, font-menu);
                 justify-content: end;
-            }         
+                &:hover{
+                    border-bottom: 1.6px solid map-get($color, white100);
+                }    
+            }
+            .activo{
+                border-bottom: 1.6px solid map-get($color, white100);
+            }
         }
     }
 }

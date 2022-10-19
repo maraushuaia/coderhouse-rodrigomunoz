@@ -44,6 +44,7 @@ footer{
             color: map-get($color, theme-select)
         }
     }
+    
     .copyright{
         background-color: map-get($color, theme-primary);
         color: map-get($color, white100);
@@ -79,7 +80,8 @@ footer{
             }
             .icon-menu{
                 width: 30px;
-                height: 27px;
+                height: 30px;
+                fill: map-get($color, white100);
             }
         }
         .copyright{

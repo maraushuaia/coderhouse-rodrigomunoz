@@ -60,11 +60,17 @@ input[type=number]{
         color: map-get($color, white100);
         background-color: map-get($color, theme-select);
         border-color: map-get($color, theme-primary);
-      }
-      &:focus {
-        color: map-get($color, blanco100);
-        background-color: map-get($color, theme-primary);
-        border-color: map-get($color, theme-primary-border);
-        box-shadow: 0 0 0 0.25rem map-get($color, theme-primary-border);
-      }
-  }
+    }
+    &:focus {
+    color: map-get($color, blanco100);
+    background-color: map-get($color, theme-primary);
+    border-color: map-get($color, theme-primary-border);
+    box-shadow: 0 0 0 0.25rem map-get($color, theme-primary-border);
+    }
+}
+
+.icon-contact{
+    width: 2rem;
+    height: 2rem;
+    fill: map-get($color, theme-secondary);
+}
