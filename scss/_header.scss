@@ -1,0 +1,24 @@
+header{
+    .ro-nav{
+        background-color: map-get($color, theme-primary);
+        align-items: flex-end;
+        .logo{
+            width: 42px;
+            height: 42px;
+        }
+        .navbar-collapse{
+            flex-basis: auto;
+            flex-grow: 0;
+            .font-menu{
+                font-size: map-get($font, font-menu);
+                justify-content: end;
+                &:hover{
+                    border-bottom: 1.6px solid map-get($color, white100);
+                }    
+            }
+            .activo{
+                border-bottom: 1.6px solid map-get($color, white100);
+            }
+        }
+    }
+}

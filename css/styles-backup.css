@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,300&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.ro-margin-l-r-4{
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.font-menu{
+    font-size: 1.2rem;
+}
+
+.logo{
+    width: 42px;
+    height: 42px;
+}
+
+/*Color Sección COPYRIGHT*/
+.copyright{
+    background-color: #6f42c1;
+    color: white;
+}
+
+.logo{
+    width: 42px;
+    height: 42px;
+}
+
+/*Color Sección MENU PRINCIPAL*/
+.ro-nav{
+    background-color: #6f42c1;
+}
+
+/*Color Para FORMULARIOS ROSADO*/
+.form-rosado{
+    background-color: #eca3c80c;
+}
+
+/*Color ROSADO*/
+.fondo-rosado{
+    background-color: #c52b780c;
+}
+
+/*Color VIOLETA LIGHT*/
+.fondo-violeta{
+    background-color: #6e42c136;
+}
+
+/*Color NEGRO*/
+.fondo-negro{
+    background-color: #0303039c;
+}
+
+/*Defino Propiedades del Encabezado de Paginas*/
+.encabezado-pagina{
+    width: 100%;
+    height: 15rem;
+    background-color: #c52b780c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6f42c1;
+}
+
+/* Datos del Carrusel */
+.cover{
+    object-fit: cover;
+}
+
+.filtro{
+    filter: brightness(60%);
+}
+
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+
+.carousel-item {
+    height: 42rem;
+}
+
+.carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 42rem;
+}
+
+.text-pink{
+    color: #c52b78;
+}
+
+.accordion-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 1.25rem;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+    border: 0;
+    border-radius: 0;
+    overflow-anchor: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #c52b78;
+    background-color: #c52b780c;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+}
+
+/*Redes Sociales*/
+.social{
+    width:15rem;
+    width:11rem;
+    display:flex;
+    padding: 10px;
+    border-radius:10px;
+}
+.social >a{
+    width:25%;
+    font-size:2rem;
+    box-shadow: #ccdbe8 3px 3px 6px 0px, #ffffff -3px -3px 6px 1px;
+    height:2rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    text-decoration: none;
+    border-radius: 2rem;
+    background:#fff;
+    margin:10px;
+    transition: 0.4s;
+    color: #c52b78;
+}
+
+.social >a:hover{
+   transform:translateY(-10px);
+   color: var(--color);
+}
+
+@keyframes sTransition {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 400%;
+    }
+}
+
+.wrap-texto{
+    color:white;
+    width: 100%;
+    justify-items: center
+}
+
+/*Uso esta clase en Institucional - Contactanos*/
+.ro-img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.home-news-container{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+}
+
+.home-news{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: #030303;
+    align-items: center;
+}
+
+.home-ufa{
+    background-color: #67adee7e;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+/*Animación ZOOM fotos Noticias Home*/
+.zoom{
+    transition: width 2s, height 2s, transform 1s;
+}
+
+.zoom:hover{
+    transform : scale(.92);
+}
+
+.ufa-text{
+    background-color: #fdfeffda;
+    align-items: center;
+    color: #4b91d6ee;
+
+}
+
+.ufa{
+    background-color: #4b91d6ee;
+    align-items: center;
+    color: aliceblue;
+}
+
+.institucional{
+    background-color: #030303;
+    color: white;
+}
+
+/*---*/
+/* Construyo modificaciones de algunos elementos de Bootstrap*/
+/*---*/
+
+.ro-btn-light{
+    background-color: #00B49B;
+    border-color: #00B49B;
+    color: white;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #6f42c1;
+    border-color: #6f42c1;
+  }
+  .btn-primary:hover {
+    color: #fff;
+    background-color: #462a7a;
+    border-color: #462a7a;
+  }
+  .btn-check:focus + .btn-primary, .btn-primary:focus {
+    color: #fff;
+    background-color: #462a7a;
+    border-color: #0a58ca;
+    box-shadow: 0 0 0 0.25rem #3184fd80;
+  }
+  .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #462a7a;
+    border-color: #0a53be;
+  }
+  .btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.25rem #3184fd80;
+  }
+  .btn-primary:disabled, .btn-primary.disabled {
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+  }
+
+.ro-float-right {
+    float:right;
+}
+
+.ro-float-left {
+    float:left;
+}
+
+.navbar-collapse{
+    flex-basis: 100%;
+    flex-grow: 0;
+}
+
+/*Configuraciones del Footer y animaciones*/
+.footer-link {
+    display: block;
+    color: #c52b78;
+    text-decoration: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .footer-link {
+      transition: none;
+    }
+}
+
+.footer-link:hover, .footer-link:focus {
+    color: #462a7a;
+}
+
+.footer-link.disabled {
+    color: #6c757d;
+    pointer-events: none;
+    cursor: default;
+}
+
+/*Seccion de noticias*/
+.popular-post{
+    background:#eca3c80c;
+    border: solid 1px #ceadbe;;
+    border-radius: 1%;
+}
+
+.content-image {
+    margin-bottom: 10px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.post-title {
+    margin-bottom: 7px;
+    margin-top: 3px;
+}
+
+.post-title, post-title a {
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.summary {
+    color: #666;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 8px;
+}
+
+.teaser {
+    margin-bottom: 32px;
+    margin-top: 19px;
+    text-align: center;
+}
+
+.article-info {
+    padding: 0 29px;
+}
+.item-odd .article-category {
+    margin-top: 8px;
+}
+
+.article-title {
+    margin-bottom: 7px;
+    margin-top: 3px;
+}
+.article-title, .subfeatured .article-title a {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 20px;
+}
+
+.article-summary {
+    color: #666;
+    font-size: 14px;
+    line-height: 16px;
+    max-height: 64px;
+    overflow: hidden;
+}

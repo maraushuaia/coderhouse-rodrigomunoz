@@ -1,0 +1,33 @@
+/*INICIO - CARRUSEL*/
+.carousel-item {
+    height: 42rem;
+    font-size: map-get($font, 130);
+    
+    .cover{
+        object-fit: cover;
+    }
+    .filtro{
+        filter: brightness(60%);
+    }
+    .img-car {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        height: 42rem;
+        .carousel-caption {
+            bottom: 3rem;
+            z-index: 10;
+        }
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 502px) {
+    .carousel-item {
+        height: 38rem;
+        .img-car {
+            height: 38rem;
+    
+        }
+    }
+}

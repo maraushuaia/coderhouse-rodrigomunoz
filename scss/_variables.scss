@@ -1,0 +1,51 @@
+$tipografia-general: 'Roboto', sans-serif;
+
+$font50: .50em;
+$font55: .55em;
+$font60: .60em;
+$font65: .65em;
+$font70: .70em;
+$font85: .85em;
+$font90: .90em;
+$font110: 1.1em;
+$font120: 1.2em;
+$font130: 1.3em;
+$font140: 1.4em;
+$font-menu: 1.2em;
+
+$font: (
+    50: $font50,
+    55: $font55,
+    60: $font60,
+    65: $font65,
+    70: $font70,
+    85: $font85,
+    90: $font90,
+    110: $font110,
+    120: $font120,
+    130: $font130,
+    140: $font140,
+    font-menu: $font-menu,
+);
+
+$color: (
+    theme-primary: #6f42c1, // Creo la variable para cambiar la paleta de colores del sitio
+    theme-primary-light: #6e42c136,
+    theme-select: #462a7a, // Color para cuando esta seleccionado
+    theme-primary-hover: #0a58ca,
+    theme-primary-border: #3184fd80,
+
+    theme-secondary: #c52b78, // Color secundario del tema
+    theme-secondary-light: #ceadbe, //
+    theme-secondary-superlight: #c52b780c, //
+
+    white100: #ffffff, //
+    green100: #00B49B, // color botones informativos
+    grey100: #666,
+
+    black100: #030303,
+    
+    blue100: #0a58ca,
+    blue200: #3184fd80,
+    blue-light: #ccdbe8,
+);

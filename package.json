@@ -1,0 +1,25 @@
+{
+  "name": "preentrega1.0",
+  "version": "1.0.0",
+  "description": "proyecto-javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss bootstrap/scss/bootstrap.scss css/bootstrap-rodrigo.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "Rodrigo Muñoz",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maraushuaia/coderhouse-javascript.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maraushuaia/coderhouse-javascript/issues"
+  },
+  "homepage": "https://github.com/maraushuaia/coderhouse-javascript#readme"
+}

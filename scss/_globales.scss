@@ -1,0 +1,88 @@
+// mapa
+// Color rosado
+// Fondo Rosado
+// Fondo Violeta
+// Seteo de Imagenes
+// Zoom (en este caso es in)
+// Botones
+
+*{
+    font-family: $tipografia-general;
+}
+
+/*GLOBAL - Color rosado*/
+.text-color-secondary{
+    color: map-get($color, theme-secondary);
+}
+
+/*GLOBAL - Fondo color ROSADO / VIOLETA LIGHT*/
+.fondo-rosado{background-color: map-get($color, theme-secondary-superlight);}
+.fondo-violeta{background-color: map-get($color, theme-primary-light);}
+
+/*GLOBAL - Adecuo el ancho de las imagenes (Institucional - Contactanos)*/
+.ro-img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+/* GLOBAL - Establezco tamaño VH de la AAP*/
+
+.tamano-app {
+    height: 40vh;
+}
+
+/*GLOBAL - inZoom para imagenes*/
+.zoom{
+    transition: width 2s, height 2s, transform 1s;
+    &:hover{
+        transform : scale(.92);
+    }
+}
+
+/*GLOBAL - spinner*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number]{
+    -moz-appearance: textfield;
+}
+
+/*GLOBAL - Botones*/
+.ro-btn-light{
+    background-color: map-get($color, green100);
+    border-color: map-get($color, green100);
+    color: map-get($color, white100);
+}
+
+.btn-primary {
+    color: map-get($color, white100);
+    background-color: map-get($color, theme-primary);
+    border-color: map-get($color, theme-primary);
+    &:hover {
+        color: map-get($color, white100);
+        background-color: map-get($color, theme-select);
+        border-color: map-get($color, theme-primary);
+    }
+    &:focus {
+    color: map-get($color, blanco100);
+    background-color: map-get($color, theme-primary);
+    border-color: map-get($color, theme-primary-border);
+    box-shadow: 0 0 0 0.25rem map-get($color, theme-primary-border);
+    }
+}
+
+/*GLOBAL  - Tamaño de iconos*/
+.icon-contact{
+    width: 2rem;
+    height: 2rem;
+    fill: map-get($color, theme-secondary);
+}
+
+.icon-files{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+  

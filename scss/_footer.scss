@@ -1,0 +1,94 @@
+/*FOOTER - Copyright y Redes Sociales*/
+footer{
+    .social{
+        width:15rem;
+        width:11rem;
+        display:flex;
+        padding: 10px;
+        border-radius:10px;
+        a{
+            width:25%;
+            font-size: $font60;
+            box-shadow: map-get($color, blue-light) 3px 3px 6px 0px, map-get($color, white100) -3px -3px 6px 1px;
+            height:2rem;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            cursor:pointer;
+            text-decoration: none;
+            border-radius: 2rem;
+            background: map-get($color, white100);
+            margin:10px;
+            transition: 0.4s;
+            color: map-get($color, theme-secondary);
+            &:hover{
+                transform:translateY(-10px);
+                color: var(--color);
+            }
+            @keyframes sTransition {
+                0% {
+                    background-position: 0%;
+                }
+                100% {
+                    background-position: 400%;
+                }
+            }
+        }
+    }
+    .footer-link {
+        display: block;
+        color: map-get($color, theme-secondary);
+        text-decoration: none;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+        &:hover{
+            color: map-get($color, theme-select)
+        }
+    }
+    
+    .copyright{
+        background-color: map-get($color, theme-primary);
+        color: map-get($color, white100);
+    }
+    .nav-down{
+        display: none;
+    }
+    .copy-simple{
+        display: none;
+    }
+}
+
+/*Intento hacer un menu que aparecerá en vista movil al final de la página*/
+@media only screen and (min-width: 300px) and (max-width: 502px) {
+    footer {
+        .nav-down{
+            display: grid;
+            padding-top: 4rem;
+            .menu-option {
+                display: flex;
+                justify-content: space-evenly;
+                overflow: hidden;
+                position: fixed;
+                text-align: center;
+                bottom: 0;
+                width: 100vw;
+                background-color: map-get($color, theme-primary);
+                padding-top: .7rem;
+                padding-bottom: .5rem;
+                span{
+                    display: block;
+                }
+            }
+            .icon-menu{
+                width: 30px;
+                height: 30px;
+                fill: map-get($color, white100);
+            }
+        }
+        .copyright{
+         display: none;
+        }
+        .copy-simple{
+            display: grid;
+        }
+    }
+}
