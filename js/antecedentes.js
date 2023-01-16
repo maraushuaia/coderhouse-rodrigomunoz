@@ -19,7 +19,7 @@ const renderCausasAntecedentes = (cuil) => {
                             <ul class="list-unstyled mt-3 mb-4">
                                 <li>Causa N°: ${causa.numeroCausa}</li>
                                 <li>Fecha Infracción: ${causa.fechaInfraccion}</li>
-                                <li>Infracción: ${causa.detalleInfraccion}</li>
+                                <li class="text-truncate">Infracción: ${causa.detalleInfraccion}</li>
                                 <li>¿Pude pagar bonificado?: SI editarlo</li>
                             </ul>
                             <form action="../app/causa-detalle.html">
