@@ -11,4 +11,3 @@ function guardarCredenciales() {
     const cuil = document.getElementById("cuil").value;
     guardarSesionStorage("cuil", cuil);
 };
-
