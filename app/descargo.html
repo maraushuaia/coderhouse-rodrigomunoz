@@ -42,29 +42,29 @@
         <div class="encabezado-pagina">
             <h2>DESCARGO</h2>
         </div>
-        <form class="pt-5 pb-5" action="">
+        <form class="pt-5 pb-5" action="" name="enviaDescargo">
             <div class="container">
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Constituí un domicilio electrónico</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="tucorreoelectronico@ejemplo.com" required>
+                    <input type="email" class="form-control" id="formEmail" placeholder="tucorreoelectronico@ejemplo.com" required>
                 </div>
 
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Domicilio real</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese el domicilio donde deberíamos llevar documentación física" required>
+                    <input type="text" class="form-control" id="formDomicilioReal" placeholder="Ingrese el domicilio donde deberíamos llevar documentación física" required>
                 </div>
             
                 <div class="mb-3">
                     <label for="message">Consulta</label>
-                    <textarea class="form-control" id="message" name="message" rows="6" placeholder="Detallanos tu descargo lo más ampliamente posible." required></textarea>
+                    <textarea class="form-control" id="formMensaje" name="message" rows="6" placeholder="Detallanos tu descargo lo más ampliamente posible." required></textarea>
                 </div>
             
                 <label for="formFile" class="form-label">Adjuntar archivo</label>
-                <input class="form-control" type="file" id="formFile">
+                <input class="form-control" type="file" id="formArchivo">
             </div>
             <div class="col-12 gap-2 mx-auto text-center pt-3">
-                <a class="col-6 mx-2" href="./descargo.html"><button class="btn ro-btn-light mb-3 px-5" type="button">Enviar</button></a>
-                <a class="col-6 mx-2" href="./causa-detalle.html"><button class="btn btn-secondary mb-3 px-5" type="button">Volver</button></a>
+                <a class="col-6 mx-2" href="./descargo.html"><button class="btn ro-btn-light mb-3 px-5" type="button" onclick="almacenar">Enviar</button></a>
+                <a class="col-6 mx-2" href="./causas-activas.html"><button class="btn btn-secondary mb-3 px-5" type="button">Volver</button></a>
               </div>
         </form>
       </main>
@@ -161,7 +161,10 @@
       </section>
     </footer>
     <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/dbcausas.js"></script>
+    <script src="../js/global.js"></script>
+    <script src="../js/detalle-causas.js"></script>
+    <script src="../js/dbdescargos.js"></script>
     </body>
-
 
 </html>

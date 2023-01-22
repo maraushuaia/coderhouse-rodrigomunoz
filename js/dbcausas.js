@@ -23,4 +23,3 @@ const restaurarAntecedentesLocalStorage = function(idPersona) {
 // Guardo en LOCALSTORAGE todos los antecedentes de las personas que aceptaré operar
 const persona1 = guardarAntecedentesLocalStorage("1234", antecedentesRodrigo);
 const persona2 = guardarAntecedentesLocalStorage("12345", antecedentesJonatan);
-
