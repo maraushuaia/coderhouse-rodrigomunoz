@@ -30,7 +30,7 @@
                         <li class="nav-item"><a class="nav-link font-menu text-white" href="./causas-activas.html">Causas en curso</a></li>
                         <li class="nav-item"><a class="nav-link font-menu text-white" href="#">Causas históricas</a></li>
                         <li class="nav-item"><a class="nav-link font-menu text-white" href="#">Pagar</a></li>
-                        <li class="nav-item"><a class="nav-link font-menu text-white" href="../pages/acceso_portal.html">Salir</a></li>
+                        <li class="nav-item"><a class="nav-link font-menu text-white" href="#">Salir</a></li>
                     </ul>
                 </div>
             </div>
@@ -62,22 +62,59 @@
                 </ul>
               </div>
 
-
-
               <!-- Tab panes -->
               <div class="tab-content">
                 <div class="tab-pane active" id="home">
-                  
-                    <div id="caratulaDeCausa">
-
+                  <div class="card mb-4 rounded-0 shadow-sm">
+                    <div class="card-header">
+                      <h5 class="py-2">Causa N°: T-123456-0/2022</h5>
                     </div>
-                  
-                
+                    <div class="card-body">
+                        <div class="pt-3">
+                            <table class="table">
+                              <thead>
+                                <tr>
+                                  <th>Items</th>
+                                  <th>Descripción</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th>Fecha Infracción:</th>
+                                  <td>15/10/2022</td>
+                                </tr>
+                                <tr>
+                                  <th>Dominio:</th>
+                                  <td>AA123ZZ</td>
+                                </tr>
+                                <tr>
+                                  <th>Infracción:</th>
+                                  <td>OTRA PRUEBA MAS</td>
+                                </tr>
+                                <tr>
+                                  <th>Monto de la multa:</th>
+                                  <td>$76.600</td>
+                                </tr>
+                                <tr>
+                                  <th>Pago bonificado:</th>
+                                  <td>A la fecha sí puede acceder al pago bonificado, lo que reduce el monto de la multa en un 50%</td>
+                                </tr>
+                                <tr>
+                                  <th>Dirección de infracción:</th>
+                                  <td>Av. Leandro N. Alem 37500</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 gap-2 mx-auto text-center pt-3">
+                    <a class="col-6 mx-2" href="./pago.html"><button class="btn btn-primary mb-3 px-5" type="button">Pagar</button></a>
+                    <a class="col-6 mx-2" href="./descargo.html"><button class="btn ro-btn-light mb-3 px-5" type="button">Descargo</button></a>
+                    <a class="col-6 mx-2" href="./causas-activas.html"><button class="btn btn-secondary mb-3 px-5" type="button">Volver</button></a>
+                  </div>
                 </div>
-              </div>
-
-
-
 
                 <!-- Tab DOCUMENTOS-->
                 <div class="tab-pane fade" id="menu1">
@@ -232,39 +269,38 @@
 
           <!--Sección de 3 columnas con información-->
           <section>
-            <div class="row pt-5">
-                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-                    <h6 class="text-uppercase">Trámites Frecuentes</h6>
-                    <ul class="list-unstyled mb-0">
-                        <li><a href="#" class="footer-link">Libre Deuda</a></li>
-                        <li><a href="##" class="footer-link">Pago de Multas</a></li>
-                        <li><a href="#" class="footer-link">Descargos</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-                    <h6 class="text-uppercase">Términos y Condiciones</h6>
-                    <ul class="list-unstyled mb-0">
-                        <li><a href="#" class="footer-link">Términos y Condiciones</a></li>
-                        <li><a href="#" class="footer-link">Política de Privacidad</a></li>
-                        <li><a href="#" class="footer-link">Sugerencias</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-                    <h6 class="text-uppercase">Nosotros</h6>
-                    <ul class="list-unstyled mb-0 text-color-secondary">
-                        <li><span>San Juan, Argentina</span></li>
-                        <li><span>(+54) 0331 444123564</span></li>
-                        <li><span>contacto@juzgadodefaltas.com.ar</span></li>
-                    </ul>
-                </div>
-                <a class="text-center text-color-secondary copy-simple" href="https://github.com/maraushuaia" target="_blank">Diseño: Rodrigo Muñoz</a>
-            </div>
-        </section>
-    </div>
-
-    <div class="text-center p-3 copyright" >© 2023 Copyright:
-        <a class="text-white" href="https://github.com/maraushuaia" target="_blank">Rodrigo Muñoz</a>
-    </div>
+              <div class="row pt-5">
+                  <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                      <h6 class="text-uppercase">Trámites Frecuentes</h6>
+                      <ul class="list-unstyled mb-0">
+                          <li><a href="./libre_deuda.html" class="footer-link">Libre Deuda</a></li>
+                          <li><a href="./pago_multas.html" class="footer-link">Pago de Multas</a></li>
+                          <li><a href="./descargos.html" class="footer-link">Descargos</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                      <h6 class="text-uppercase">Términos y Condiciones</h6>
+                      <ul class="list-unstyled mb-0">
+                          <li><a href="./terminos_condiciones.html" class="footer-link">Términos y Condiciones</a></li>
+                          <li><a href="./politica_privacidad.html" class="footer-link">Política de Privacidad</a></li>
+                          <li><a href="./sugerencias.html" class="footer-link">Sugerencias</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                      <h6 class="text-uppercase">Nosotros</h6>
+                      <ul class="list-unstyled mb-0 text-color-secondary">
+                          <li><span>San Juan, Argentina</span></li>
+                          <li><span>(+54) 0331 444123564</span></li>
+                          <li><span>contacto@juzgadodefaltas.com.ar</span></li>
+                      </ul>
+                  </div>
+                  <a class="text-center text-color-secondary copy-simple" href="https://github.com/maraushuaia" target="_blank">Diseño: Rodrigo Muñoz</a>
+              </div>
+          </section>
+      </div>
+      <div class="text-center p-3 copyright" >© 2022 Copyright:
+          <a class="text-white" href="https://github.com/maraushuaia" target="_blank">Rodrigo Muñoz</a>
+      </div>
       <!-- Este menu de Accesos Rápidos solo se muestra en vista movil -->
       <section class="nav-down">
           <div class="menu-option">

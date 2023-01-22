@@ -4,7 +4,7 @@
 const renderCausasAntecedentes = (cuil) => {
     const causas = restaurarAntecedentesLocalStorage(cuil);
     let imprimir = "";
-    
+        
     // Si la persona posee antecedentes los imprimo, caso contrario informo que no tiene en curso
     if (causas != null) { 
         for (let causa of causas) {
@@ -15,15 +15,16 @@ const renderCausasAntecedentes = (cuil) => {
                             <h4 class="my-0 fw-normal text-center">${causa.materia}</h4>
                         </div>
                         <div class="card-body">
-                            <h1 class="card-title pricing-card-title text-center">$${causa.importeMulta}</h1>
-                            <ul class="list-unstyled mt-3 mb-4">
-                                <li>Causa N°: ${causa.numeroCausa}</li>
-                                <li>Fecha Infracción: ${causa.fechaInfraccion}</li>
-                                <li class="text-truncate">Infracción: ${causa.detalleInfraccion}</li>
-                                <li>¿Pude pagar bonificado?: SI editarlo</li>
-                            </ul>
                             <form action="../app/causa-detalle.html">
-                                <button type="submit" class="w-100 btn btn-lg btn-primary">Ver detalles</button>
+                                <h1 class="card-title pricing-card-title text-center">$${causa.importeMulta}</h1>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li>ID Causa N°: ${causa.idCausa}</li>
+                                    <li>Causa N°: ${causa.numeroCausa}</li>
+                                    <li>Fecha Infracción: ${causa.fechaInfraccion}</li>
+                                    <li class="text-truncate">Infracción: ${causa.detalleInfraccion}</li>
+                                    <li>¿Pude pagar bonificado?: SI editarlo</li>
+                                </ul>
+                                <button type="submit" onClick="buscarDetalles(${causa.idCausa},usuario());" class="w-100 btn btn-lg btn-primary">Ver detalles</button>
                             </form>
                         </div>
                     </div>
@@ -33,7 +34,7 @@ const renderCausasAntecedentes = (cuil) => {
         document.getElementById("causas_antecedentes").innerHTML = imprimir;
     }
     else {
-        imprimir += '<div class="tamano-app"><div class="alert alert-success text-center m-5" role="success">A la fecha no registra causas en curso.</div></div>';
+        imprimir += '<div style="margin-top: 1em; margin-bottom: 15.5em;"><div class="alert alert-success text-center m-5" role="success">A la fecha no registra causas en curso.</div></div>';
         document.getElementById("causas_antecedentes").innerHTML = imprimir;
     }
 }
