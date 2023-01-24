@@ -6,6 +6,9 @@ const renderCausasAntecedentes = (cuil) => {
     let imprimir = "";
         
     // Si la persona posee antecedentes los imprimo, caso contrario informo que no tiene en curso
+    //<input type="submit" value="Ver detalles" onClick="buscarDetalles(${causa.idCausa},usuario());" class="w-100 btn btn-lg btn-primary>
+    // <button type="submit" onClick="buscarDetalles(${causa.idCausa},usuario());" class="w-100 btn btn-lg btn-primary">Ver detalles</button>
+
     if (causas != null) { 
         for (let causa of causas) {
             imprimir += `<div class="col-md-3 mb-3 pt-5">
@@ -15,7 +18,7 @@ const renderCausasAntecedentes = (cuil) => {
                             <h4 class="my-0 fw-normal text-center">${causa.materia}</h4>
                         </div>
                         <div class="card-body">
-                            <form action="../app/causa-detalle.html">
+                            <form action="#">
                                 <h1 class="card-title pricing-card-title text-center">$${causa.importeMulta}</h1>
                                 <ul class="list-unstyled mt-3 mb-4">
                                     <li>ID Causa N°: ${causa.idCausa}</li>
