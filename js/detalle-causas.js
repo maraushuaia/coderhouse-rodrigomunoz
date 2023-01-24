@@ -18,9 +18,6 @@ const buscarDetalles = (idCausa, cuil) => {
     console.log("¿Causa encontrada?: "+encontrado);
     console.log("Array de la causa: ", causa);
 
-    let enviarCuil = cuil;
-    let enviarIdCausa = idCausa;
-    
     //A continuación dibujo una serie de tabs con todos los datos de la causa
     mostrarDetalles += `<div class="row row-cols-1 mb-3 pt-3">
                             <!-- Nav tabs -->
@@ -99,7 +96,7 @@ const buscarDetalles = (idCausa, cuil) => {
 
                                         <div class="col-12 gap-2 mx-auto text-center pt-3">
                                             <a class="col-6 mx-2" href="./pago.html"><button class="btn btn-primary mb-3 px-5" type="button">Pagar</button></a>
-                                            <a class="col-6 mx-2" href="./descargo.html"><button class="btn ro-btn-light mb-3 px-5" type="submit" onclick="enviarDescargo(cuil, idCausa)">Descargo</button></a>
+                                            <a class="col-6 mx-2" href="./descargo.html"><button class="btn ro-btn-light mb-3 px-5" type="submit" onclick="guardarIdCausa">Descargo</button></a>
                                             <a class="col-6 mx-2" href="./causas-activas.html"><button class="btn btn-secondary mb-3 px-5" type="button">Volver</button></a>
                                         </div>
                                     </div>

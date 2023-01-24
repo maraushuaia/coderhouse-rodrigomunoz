@@ -40,24 +40,26 @@ const buscarDescargoLocalStorage = function(idCausa, cuil) {
 guardarDescargoLocalStorage();
 
 
-const enviarDescargo = (cuil, idCausa) =>{
+const guardarEnvioDescargo = (cuil, idCausa) =>{
     console.log("Entró al proceso para almacenar información de Descargo.!");
     let email = document.getElementById("formEmail").value;
     let domicilioReal = document.getElementById("formDomicilioReal").value;
     let mensaje = document.getElementById("formMensaje").value;
     let archivo = document.getElementById("formArchivo").value;
+
     console.log(email);
     console.log(domicilioReal);
     console.log(mensaje);
     console.log(archivo);
-    console.log("Busco causas del CUIL: "+cuil);
-    console.log("Busco causa ID NRO.: "+idCausa);
+    console.log("Busco causas del CUIL: "+usuario());
+    console.log("Busco causa ID NRO.: "+IdCausaActiva());
 
     let fechaHoy = new Date();
     
-    let rodrigo = dbDescargos.agregar(1, usuario(), idCausa, email, domicilioReal, mensaje, archivo, fechaHoy);
+    //let documentoRecibido = dbDescargos.agregar(1, usuario(), idCausa, email, domicilioReal, mensaje, archivo, fechaHoy);
+    //console.log(documentoRecibido);
 }
 
 
 
-enviarDescargo();
+guardarEnvioDescargo();
