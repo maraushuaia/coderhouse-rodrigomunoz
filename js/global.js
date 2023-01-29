@@ -2,5 +2,3 @@
 const usuario = () =>{
     return JSON.parse(sessionStorage.getItem("cuil"));
 };
-
-
