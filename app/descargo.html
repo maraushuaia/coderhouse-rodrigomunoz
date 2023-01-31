@@ -22,15 +22,33 @@
         <div class="encabezado-pagina">
             <h2>DESCARGO</h2>
         </div>
-        <form class="pt-5 pb-5"  id="enviaDescargo" method="GET" action="#">
-            <div class="container">
 
+        <div >
+            <div class="container mt-5 fondo-rosado p-5">
+                <h3><strong>Registro de Correos</strong></h3>
+                <span>A continuación te listamos los correos que hemos recibido de tu parte:</span>
+         
+                <div id="documentosEnviados">
+
+                </div>    
+            </div>
+                
+        </div>
+            
+        
+
+        <form class="pt-5 pb-5" id="enviaDescargo" method="GET" action="#">
+            <div class="container fondo-rosado p-5">
+                <div class="mb-4">
+                    <h3><strong>Formulario para enviar información:</strong></h3>
+                </div>
+                
                 <div class="mb-3">
                     <select id="tipoContacto" name="infoTipoContacto" class="form-control" required>
                         <option value="0" disabled selected>Selecciona una opción</option>
-                        <option value="consulta">Consulta</option>
-                        <option value="aportaDocumentacion">Aporta Documentacion</option>
-                        <option value="efectuaDescargo">Efectua Descargo</option>
+                        <option value="Consulta">Consulta</option>
+                        <option value="Aporta Documentacion">Aporta Documentacion</option>
+                        <option value="Efectua Descargo">Efectua Descargo</option>
                     </select>
                 </div>
 
@@ -53,11 +71,12 @@
                 <input class="form-control" type="file" id="formArchivo">
             </div>
             <div class="col-12 gap-2 mx-auto text-center pt-3">
+            
+            <!-- <a href="#" class="btn ro-btn-light mb-3 px-5" type="submit" onclick="enviarDescargo">Enviar</a> -->
                 
-                
-                <button class="btn ro-btn-light mb-3 px-5" type="submit" onclick="enviarDescargo">Enviar</button>
-                <a class="col-6 mx-2" href="./causas-activas.html"><button class="btn btn-secondary mb-3 px-5" type="button">Volver</button></a>
-              </div>
+            <button class="btn ro-btn-light mb-3 px-5" type="submit" onclick="enviarDescargo">Enviar</button>
+            <a class="col-6 mx-2" href="./antecedentes.html"><button class="btn btn-secondary mb-3 px-5" type="button">Volver</button></a>
+        </div>
         </form>
       </main>
 
@@ -67,9 +86,12 @@
     </footer>
     
     <script src="../js/bootstrap.bundle.min.js"></script>
-    <script src="../js/dbcausas.js"></script>
     <script src="../js/global.js"></script>
+    <script src="../js/formato.js"></script>
+    <script src="../js/dbcausas.js"></script>
     <script src="../js/dbdescargos.js"></script>
+    <script src="../js/causa-detalles.js"></script>
+    <script src="../js/listado-documentos.js"></script>
 </body>
 </html>
 

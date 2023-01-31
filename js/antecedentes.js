@@ -1,8 +1,8 @@
-// Creo el renderizado de los antecedentes de una persona
+// // Creo el renderizado de los antecedentes de una persona
 // Para ello busco con el CUIL de la persona 
 
 const renderCausasAntecedentes = (cuil) => {
-    console.log("Muestro los antecedentes de la persona.!");
+    console.log("Muestro los antecedentes de la persona.!", cuil);
     const causas = restaurarAntecedentesLocalStorage(cuil);
     let imprimir = "";
         
@@ -19,7 +19,7 @@ const renderCausasAntecedentes = (cuil) => {
                             <h4 class="my-0 fw-normal text-center">${causa.materia}</h4>
                         </div>
                         <div class="card-body">
-                            <form action="#" id="causa">
+                            
                                 <h1 class="card-title pricing-card-title text-center">$${causa.importeMulta}</h1>
                                 <ul class="list-unstyled mt-3 mb-4">
                                     <li>ID Causa N°: ${causa.idCausa}</li>
@@ -28,21 +28,19 @@ const renderCausasAntecedentes = (cuil) => {
                                     <li class="text-truncate">Infracción: ${causa.detalleInfraccion}</li>
                                     <li>¿Pude pagar bonificado?: ***</li>
                                 </ul>
-                                <a href="./causa-detalle.html" type="btn" onclick="verDetalles(${causa.idCausa}, usuario());">Ir a Detalles</a>
-                                <button id="form-btn" type="btn" class="w-100 btn btn-lg btn-primary onclick="verDetalles(${causa.idCausa}, usuario());">Ver detalles</button>
+                                <a href="#" type="btn" class="w-100 btn btn-lg btn-primary" onclick="verDetalles(${causa.idCausa});">Ver Detalles</a>                           
+                                
                             </form>
                         </div>
                     </div>
                 </div>
             </div>`;
-            console.log(`${causa.idCausa}`);    
         }
-        document.getElementById("causas_antecedentes").innerHTML = imprimir;
-        
+        document.getElementById("causasAntecedentes").innerHTML = imprimir;
     }
     else {
         imprimir += '<div style="margin-top: 1em; margin-bottom: 15.5em;"><div class="alert alert-success text-center m-5" role="success">A la fecha no registra causas en curso.</div></div>';
-        document.getElementById("causas_antecedentes").innerHTML = imprimir;
+        document.getElementById("causasAntecedentes").innerHTML = imprimir;
     }
 }
 
